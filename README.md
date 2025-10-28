@@ -13,7 +13,7 @@ An interactive P5.js animation for the ELO 2026 conference at the University of 
 
 ## Event Details
 
-- **Date**: July 16th-18th, 2026
+- **Date**: July 15th-18th, 2026
 - **Format**: Online
 - **Location**: University of Central Florida
 - **Call for Proposals**: Coming November 2025
