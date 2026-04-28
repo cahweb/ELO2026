@@ -44,8 +44,8 @@ The experimental track invites participants to propose alternative platforms and
 
 Our submission portal will open in December. The expected timeline for review is as follows:
 
-- **Submission Deadline:** January 30th, 2026
-- **Notifications of Acceptance:** March 15, 2026
+- **Submission Deadline:** February 28th, 2026
+- **Notifications of Acceptance:** April 30, 2026
 - **Final Exhibition Pieces and Updated Abstracts Due:** May 15, 2026
 
 ## Questions?
