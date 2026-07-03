@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule in Your Time Zone - ELO 2026</title>
+    <meta name="description" content="The full ELO 2026 (un)supervised conference schedule, viewable in any time zone. July 15-18, 2026, fully online.">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to schedule</a>
+    <div class="content-wrapper">
+        <header class="logo-header">
+            <nav aria-label="Site navigation">
+                <p><a href="index.html" class="cta-button">ELO 2026 Home</a></p>
+            </nav>
+            <img src="elo.png" alt="" width="400" height="170">
+        </header>
+        <main id="main">
+            <h1 class="glow-heading">Schedule in Your Time Zone</h1>
+            <p class="tagline">July 15&ndash;18, 2026 &middot; Fully Online</p>
+
+            <div class="tz-controls">
+                <label for="tz-select">Show session times in:</label>
+                <select id="tz-select"></select>
+                <p class="tz-note" id="tz-note" aria-live="polite"></p>
+                <p class="sync-note" id="sync-note"></p>
+            </div>
+
+            <noscript>
+                <div class="status-message">
+                    <p>This time zone tool needs JavaScript.
+                    <a href="https://stars.library.ucf.edu/elo2026/combined_schedule/">View the full schedule
+                    on STARS</a> &mdash; times listed there are US Eastern.</p>
+                </div>
+            </noscript>
+
+            <div id="schedule"></div>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <p>ELO (un)supervised 2026 &middot; Hosted by the University of Central Florida &middot;
+        <a href="https://stars.library.ucf.edu/elo2026/">Conference repository on STARS</a></p>
+    </footer>
+    <script type="module" src="js/schedule-page.js"></script>
+</body>
+</html>

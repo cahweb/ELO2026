@@ -1,0 +1,247 @@
+/* Shared neon styling for the ELO 2026 portal + schedule pages. */
+
+:root {
+  --pink: #ff69b4;
+  --cyan: #4dd5e8;
+  --bg: #000;
+  --card-bg: rgba(0, 0, 0, 0.85);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Righteous", "Arial Black", sans-serif;
+  background: var(--bg);
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* p5.js backdrop sits fixed behind everything and never traps clicks */
+#canvas-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background: var(--cyan);
+  color: #000;
+  font-weight: 700;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.glow-heading {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(77, 213, 232, 0.8), 3px 3px 6px rgba(0, 0, 0, 0.9);
+  margin: 1.5rem 0;
+}
+
+.glow-subheading {
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  color: var(--pink);
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 15px rgba(255, 105, 180, 0.8), 3px 3px 6px rgba(0, 0, 0, 0.9);
+  margin: 2.5rem 0 1rem;
+}
+
+.logo-header { text-align: center; padding-top: 1rem; }
+.logo-header img {
+  max-width: min(400px, 80vw);
+  height: auto;
+  filter: drop-shadow(0 0 30px rgba(77, 213, 232, 0.4))
+          drop-shadow(0 0 20px rgba(255, 105, 180, 0.3));
+}
+
+.tagline {
+  text-align: center;
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(77, 213, 232, 0.8);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  border: 3px solid var(--pink);
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--pink);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+  transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.cta-button:hover, .cta-button:focus {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  box-shadow: 0 0 25px rgba(77, 213, 232, 0.8);
+  transform: scale(1.04);
+}
+.cta-row { text-align: center; margin: 2rem 0; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  padding: 0;
+  margin: 1.5rem 0;
+  list-style: none;
+}
+
+.neon-card {
+  display: block;
+  height: 100%;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 2px solid var(--pink);
+  border-radius: 18px;
+  box-shadow: 0 0 18px rgba(255, 105, 180, 0.45);
+  color: #fff;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.neon-card:hover, .neon-card:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 24px rgba(77, 213, 232, 0.7);
+  transform: translateY(-3px);
+}
+.neon-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--cyan);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.neon-card p { margin: 0; color: #e8e8e8; font-family: Arial, Helvetica, sans-serif; }
+
+a:focus-visible, button:focus-visible, select:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+/* ---- schedule page ---- */
+
+.tz-controls {
+  background: var(--card-bg);
+  border: 2px solid var(--cyan);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 0 18px rgba(77, 213, 232, 0.45);
+}
+.tz-controls label { display: block; font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--cyan); }
+.tz-controls select {
+  font-size: 1rem;
+  padding: 0.6rem;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  border: 2px solid var(--pink);
+}
+.tz-note { color: #e8e8e8; font-family: Arial, Helvetica, sans-serif; margin: 0.75rem 0 0; }
+.sync-note { color: #bdbdbd; font-family: Arial, Helvetica, sans-serif; font-size: 0.9rem; }
+.sync-note a { color: var(--cyan); }
+
+.day-heading {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  color: var(--pink);
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+  border-bottom: 2px solid rgba(255, 105, 180, 0.5);
+  padding-bottom: 0.4rem;
+  margin: 2.5rem 0 1rem;
+}
+
+.event-list { list-style: none; margin: 0; padding: 0; }
+.event-item {
+  background: var(--card-bg);
+  border: 2px solid rgba(255, 105, 180, 0.55);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.9rem;
+}
+.event-item.featured { border-color: var(--cyan); box-shadow: 0 0 18px rgba(77, 213, 232, 0.5); }
+.event-time { color: var(--cyan); font-size: 1.05rem; letter-spacing: 1px; }
+.event-title { margin: 0.35rem 0; font-size: 1.15rem; line-height: 1.35; }
+.event-title a { color: #fff; }
+.event-title a:hover, .event-title a:focus { color: var(--pink); }
+.event-meta { color: #d0d0d0; font-family: Arial, Helvetica, sans-serif; font-size: 0.95rem; margin: 0.25rem 0 0; }
+.badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid var(--pink);
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  margin-left: 0.5rem;
+  color: var(--pink);
+}
+.badge.featured-badge { border-color: var(--cyan); color: var(--cyan); }
+
+.status-message {
+  background: var(--card-bg);
+  border: 2px solid var(--pink);
+  border-radius: 14px;
+  padding: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.status-message a { color: var(--cyan); }
+
+.site-footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1.5rem;
+  color: #bdbdbd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.site-footer a { color: var(--cyan); }
+
+/* Screen-reader-only utility; used for link context text in schedule-page.js */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-button, .neon-card { transition: none; }
+  .cta-button:hover, .cta-button:focus { transform: none; }
+  .neon-card:hover, .neon-card:focus { transform: none; }
+}
