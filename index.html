@@ -3,182 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELO 2026 - University of Central Florida</title>
+    <title>ELO 2026 (un)supervised - Electronic Literature Organization Conference</title>
+    <meta name="description" content="ELO (un)supervised 2026, the annual Electronic Literature Organization conference. Fully online, July 15-18, 2026, hosted by the University of Central Florida. Registration is free for ELO members.">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Righteous&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            font-family: 'Righteous', 'Arial Black', sans-serif;
-            background: #000;
-        }
-
-        #canvas-container {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        #readability-box {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            max-width: 700px;
-            min-height: 500px;
-            padding: 80px 40px;
-            background: rgba(0, 0, 0, 0.85);
-            border: 3px solid #FF69B4;
-            border-radius: 30px;
-            box-shadow: 0 0 30px rgba(255, 105, 180, 0.8),
-                        0 0 60px rgba(255, 105, 180, 0.4),
-                        inset 0 0 30px rgba(255, 105, 180, 0.1);
-            z-index: 5;
-        }
-
-        #content-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 10;
-            pointer-events: none;
-        }
-
-        #logo-container {
-            margin-bottom: 40px;
-        }
-
-        #logo-container img {
-            max-width: 500px;
-            height: auto;
-            filter: drop-shadow(0 0 30px rgba(77, 213, 232, 0.4))
-                    drop-shadow(0 0 20px rgba(255, 105, 180, 0.3));
-        }
-
-        .date-text {
-            font-size: 32px;
-            font-weight: 700;
-            color: #4DD5E8;
-            text-shadow: 0 0 20px rgba(77, 213, 232, 0.8),
-                         0 0 40px rgba(77, 213, 232, 0.4),
-                         3px 3px 6px rgba(0,0,0,0.9);
-            margin: 25px 0;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .cfp-text {
-            font-size: 36px;
-            font-weight: 700;
-            color: #FF69B4;
-            text-shadow: 0 0 25px rgba(255, 105, 180, 1),
-                         0 0 50px rgba(255, 105, 180, 0.6),
-                         0 0 75px rgba(255, 105, 180, 0.3),
-                         3px 3px 8px rgba(0,0,0,0.9);
-            margin: 20px 0 10px 0;
-            letter-spacing: 2px;
-            pointer-events: auto;
-            text-transform: uppercase;
-        }
-
-        .cfp-text a {
-            color: #FF69B4;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        .cfp-text a:hover {
-            color: #4DD5E8;
-            text-shadow: 0 0 30px rgba(77, 213, 232, 1),
-                         0 0 60px rgba(77, 213, 232, 0.7),
-                         0 0 90px rgba(77, 213, 232, 0.4),
-                         3px 3px 8px rgba(0,0,0,0.9);
-            transform: scale(1.05);
-        }
-
-        .submission-info {
-            font-size: 20px;
-            font-weight: 700;
-            color: #4DD5E8;
-            text-shadow: 0 0 15px rgba(77, 213, 232, 0.6),
-                         0 0 30px rgba(77, 213, 232, 0.3),
-                         3px 3px 6px rgba(0,0,0,0.9);
-            margin: 10px 0 20px 0;
-            letter-spacing: 1px;
-            pointer-events: auto;
-        }
-
-        .submission-info a {
-            color: #4DD5E8;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: inline-block;
-            border-bottom: 2px solid rgba(77, 213, 232, 0.5);
-        }
-
-        .submission-info a:hover {
-            color: #FF69B4;
-            text-shadow: 0 0 20px rgba(255, 105, 180, 0.9),
-                         0 0 40px rgba(255, 105, 180, 0.5),
-                         3px 3px 6px rgba(0,0,0,0.9);
-            border-bottom-color: rgba(255, 105, 180, 0.8);
-        }
-
-        @media (max-width: 768px) {
-            #readability-box {
-                width: 90%;
-                min-height: 400px;
-                padding: 60px 20px;
-                border-radius: 20px;
-            }
-
-            #logo-container img {
-                max-width: 320px;
-            }
-
-            .date-text {
-                font-size: 18px;
-                padding: 0 20px;
-                letter-spacing: 1px;
-            }
-
-            .cfp-text {
-                font-size: 24px;
-                padding: 0 20px;
-                letter-spacing: 1.5px;
-            }
-
-            .submission-info {
-                font-size: 16px;
-                padding: 0 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="canvas-container"></div>
-    <div id="readability-box"></div>
-    <div id="content-overlay">
-        <div id="logo-container">
-            <img src="elo.png" alt="ELO 2026 Logo">
-        </div>
-        <div class="date-text">
-            July 15th-18th | Online | UCF
-        </div>
-        <div class="cfp-text">
-            <a href="cfp.html">CFP Available Now</a>
-        </div>
-        <div class="submission-info">
-            <a href="https://stars.library.ucf.edu/elo2026/" target="_blank">Submit Now - Portal Open Through February 28th!</a>
-        </div>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="canvas-container" aria-hidden="true"></div>
+    <div class="content-wrapper">
+        <header class="logo-header">
+            <img src="elo.png" alt="" width="400" height="170">
+            <h1 class="glow-heading">ELO (un)supervised 2026</h1>
+            <p class="tagline">July 15&ndash;18, 2026 &middot; Fully Online &middot; Hosted by UCF</p>
+            <p class="countdown" id="countdown"></p>
+        </header>
 
+        <main id="main">
+            <div class="cta-row">
+                <a class="cta-button" href="https://forms.gle/91whqpm3XHcPqrQeA">Register Now &mdash; Free for ELO Members</a>
+                <a class="cta-button" href="schedule.html">Schedule in Your Time Zone</a>
+            </div>
+
+            <h2 class="glow-subheading">Explore the Conference</h2>
+            <ul class="card-grid">
+                <li><a class="neon-card" href="schedule.html">
+                    <h3>Full Schedule</h3>
+                    <p>Every keynote, panel, talk, and performance &mdash; shown in your own time zone.</p>
+                </a></li>
+                <li><a class="neon-card" href="https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries">
+                    <h3>Algorithms &amp; Imaginaries</h3>
+                    <p>Sessions on computation, AI, and the imagination &mdash; on the STARS repository.</p>
+                </a></li>
+                <li><a class="neon-card" href="https://stars.library.ucf.edu/elo2026/hypertextsandfictions">
+                    <h3>Hypertexts &amp; Fictions</h3>
+                    <p>Sessions on hypertext, interactive fiction, and digital narrative &mdash; on STARS.</p>
+                </a></li>
+                <li><a class="neon-card" href="https://stars.library.ucf.edu/elo2026/narrativesandworlds">
+                    <h3>Narratives &amp; Worlds</h3>
+                    <p>Sessions on storyworlds, games, and playable media &mdash; on STARS.</p>
+                </a></li>
+                <li><div class="neon-card">
+                    <h3>Exhibition</h3>
+                    <p>The juried exhibition of electronic literature launches during the conference &mdash; coming soon!</p>
+                </div></li>
+                <li><a class="neon-card" href="https://stars.library.ucf.edu/elo2026/registration.html">
+                    <h3>Registration &amp; Access</h3>
+                    <p>How to register and join the online conference. Free for ELO members.</p>
+                </a></li>
+            </ul>
+
+            <h2 class="glow-subheading">About ELO 2026</h2>
+            <ul class="card-grid">
+                <li><a class="neon-card" href="https://stars.library.ucf.edu/elo2026/about.html">
+                    <h3>Organizers &amp; Committees</h3>
+                    <p>The people behind (un)supervised.</p>
+                </a></li>
+                <li><a class="neon-card" href="https://stars.library.ucf.edu/elo2026/information.html">
+                    <h3>Logistics &amp; Policies</h3>
+                    <p>Conference logistics, access, and community policies.</p>
+                </a></li>
+                <li><a class="neon-card" href="cfp.html">
+                    <h3>Call for Proposals (Archived)</h3>
+                    <p>The (un)supervised CFP that shaped this year's program. Submissions are closed &mdash; join us as an attendee!</p>
+                </a></li>
+            </ul>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <p>ELO (un)supervised 2026 &middot; <a href="https://stars.library.ucf.edu/elo2026/">Conference repository on STARS</a>
+        &middot; <a href="https://eliterature.org/">Electronic Literature Organization</a></p>
+    </footer>
+    <script type="module" src="js/countdown.js"></script>
     <script src="sketch.js"></script>
 </body>
 </html>

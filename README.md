@@ -1,83 +1,52 @@
-# ELO 2026 - Interactive Landing Page
+# ELO 2026 (un)supervised — Conference Website
 
-An interactive P5.js animation for the ELO 2026 conference at the University of Central Florida.
+Portal and schedule tool for the [ELO (un)supervised 2026](https://stars.library.ucf.edu/elo2026/) conference, fully online July 15–18, 2026, hosted by the University of Central Florida.
 
-## Features
+## What the site is
 
-- **Official ELO 2026 Logo**: Prominently displayed with glowing effects
-- **Static Electricity Effect**: Dynamic background animation with particles that create lightning-like connections
-- **Mouse Interaction**: The animation responds to mouse movement, creating stronger connections near the cursor
-- **Brand-Matched Colors**: Animation uses the vibrant color palette from the official logo (pink, cyan, orange, purple, green)
-- **Responsive Design**: Automatically adapts to different screen sizes
-- **GitHub Pages Ready**: Configured for easy deployment
+**`index.html`** — Landing page portal. Presents a live countdown to the conference start, a registration CTA, and cards linking to all major conference destinations: the full schedule, STARS track collections, the exhibition, and about/logistics pages. The CFP card is archived (submissions closed).
 
-## Event Details
+**`schedule.html`** — Time-zone schedule tool. Loads every event from `data/events.json` and renders them in the visitor's local time zone, with a dropdown to switch zones. Built on `js/schedule-core.js` (pure functions) and `js/schedule-page.js` (DOM rendering).
 
-- **Date**: July 15th-18th, 2026
-- **Format**: Online
-- **Location**: University of Central Florida
-- **Call for Proposals**: Coming November 2025
+**`sketch.js`** — p5.js particle/lightning backdrop that runs behind both pages. Respects `prefers-reduced-motion: reduce` by rendering one static frame and stopping the animation loop.
 
-## Setup
+## Data pipeline
 
-### Local Development
+Event data is fetched from the UCF STARS RSS feed and stored in `data/events.json`.
 
-Simply open `index.html` in a web browser to view the animation locally.
+- **Script:** `scripts/fetch_schedule.py` — fetches the RSS feed, parses events, converts all times to UTC, and writes `data/events.json`.
+- **GitHub Action:** `.github/workflows/` runs the fetch script on a 6-hour schedule to keep data current.
+- **Time convention:** All times in `data/events.json` are stored as UTC ISO-8601 strings. The conference runs Eastern Time (America/New_York, UTC-4 in July). See `js/schedule-core.js` for the canonical zone handling.
 
-### Deploying to GitHub Pages
+## Running tests
 
-1. Push your changes to the repository
-2. Go to your repository settings on GitHub
-3. Navigate to "Pages" in the left sidebar
-4. Under "Source", select the branch you want to deploy (e.g., `main`)
-5. Click "Save"
-6. Your site will be available at `https://[username].github.io/ELO2026/`
+### Python (data pipeline)
 
-## Customization
-
-### Colors
-
-The animation uses a vibrant color palette extracted from the official ELO 2026 logo. To modify colors, edit the `colors` array in `sketch.js`:
-
-```javascript
-colors = [
-    color(255, 105, 180, 150),  // Pink/Magenta
-    color(91, 111, 168, 150),   // Purple/Blue
-    color(255, 140, 66, 150),   // Orange
-    color(77, 213, 232, 150),   // Cyan/Light Blue
-    color(76, 175, 80, 150),    // Green
-];
+```bash
+python -m unittest tests.test_fetch_schedule -v
 ```
 
-### Particle Count
+### JavaScript (schedule logic + countdown)
 
-To adjust the density of the static electricity effect, modify the `numParticles` variable in `sketch.js`:
+Run from the repo root — do **not** pass a directory argument:
 
-```javascript
-let numParticles = 100; // Increase for more particles, decrease for fewer
+```bash
+node --test
 ```
 
-### Text Content
+Expects 11 passing tests: 7 from `tests/schedule-core.test.js` and 4 from `tests/countdown.test.js`.
 
-To modify the event details text, edit the text in the `#content-overlay` div in `index.html`.
+## Local development server
 
-## Technologies Used
+```bash
+python -m http.server 8000
+```
 
-- **P5.js**: Creative coding library for the interactive animation
-- **HTML5/CSS3**: Modern web standards
-- **GitHub Pages**: Free static site hosting
+Then open `http://localhost:8000/` for the portal or `http://localhost:8000/schedule.html` for the schedule tool.
 
-## Browser Compatibility
+## Deployment
 
-This site works best on modern browsers that support:
-- HTML5 Canvas
-- ES6 JavaScript
-- CSS3 Transforms and Filters
-
-Tested on:
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
+The site deploys to GitHub Pages from the `main` branch. Push changes and the static files are served at the repository's Pages URL.
 
 ## License
 

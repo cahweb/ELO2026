@@ -22,6 +22,11 @@ function setup() {
     for (let i = 0; i < numParticles; i++) {
         particles.push(new Particle());
     }
+
+    // Respect prefers-reduced-motion: render one static frame, no animation
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        noLoop();
+    }
 }
 
 function draw() {
