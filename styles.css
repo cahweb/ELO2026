@@ -126,7 +126,7 @@ body {
   text-decoration: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
-.neon-card:hover, .neon-card:focus {
+a.neon-card:hover, a.neon-card:focus {
   border-color: var(--cyan);
   box-shadow: 0 0 24px rgba(77, 213, 232, 0.7);
   transform: translateY(-3px);
@@ -243,7 +243,7 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .cta-button, .neon-card { transition: none; }
   .cta-button:hover, .cta-button:focus { transform: none; }
-  .neon-card:hover, .neon-card:focus { transform: none; }
+  a.neon-card:hover, a.neon-card:focus { transform: none; }
 }
 
 .countdown {

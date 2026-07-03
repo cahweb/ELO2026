@@ -8,15 +8,15 @@ Portal and schedule tool for the [ELO (un)supervised 2026](https://stars.library
 
 **`schedule.html`** — Time-zone schedule tool. Loads every event from `data/events.json` and renders them in the visitor's local time zone, with a dropdown to switch zones. Built on `js/schedule-core.js` (pure functions) and `js/schedule-page.js` (DOM rendering).
 
-**`sketch.js`** — p5.js particle/lightning backdrop that runs behind both pages. Respects `prefers-reduced-motion: reduce` by rendering one static frame and stopping the animation loop.
+**`sketch.js`** — p5.js particle/lightning backdrop that runs on `index.html` only; `schedule.html` has no animated backdrop. Respects `prefers-reduced-motion: reduce` by rendering one static frame and stopping the animation loop.
 
 ## Data pipeline
 
-Event data is fetched from the UCF STARS RSS feed and stored in `data/events.json`.
+Event data is scraped from the STARS combined-schedule HTML page (`https://stars.library.ucf.edu/elo2026/combined_schedule/`) and stored in `data/events.json`. The RSS feed is only used to flag the 7 featured plenary events.
 
-- **Script:** `scripts/fetch_schedule.py` — fetches the RSS feed, parses events, converts all times to UTC, and writes `data/events.json`.
+- **Script:** `scripts/fetch_schedule.py` — scrapes the combined-schedule HTML page, parses events, converts all times to UTC, and writes `data/events.json`.
 - **GitHub Action:** `.github/workflows/` runs the fetch script on a 6-hour schedule to keep data current.
-- **Time convention:** All times in `data/events.json` are stored as UTC ISO-8601 strings. The conference runs Eastern Time (America/New_York, UTC-4 in July). See `js/schedule-core.js` for the canonical zone handling.
+- **Time convention:** All times in `data/events.json` are stored as UTC ISO-8601 strings. The conference runs Eastern Time (America/New_York, UTC-4 in July). The canonical Eastern→UTC conversion lives in the `EASTERN` constant in `scripts/fetch_schedule.py` (that's what to change if the conference timezone base ever changes); `js/schedule-core.js` only formats already-UTC instants for display.
 
 ## Running tests
 

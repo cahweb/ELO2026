@@ -96,6 +96,8 @@ def validate(payload):
             errors.append(f"event missing title/url: {ev.get('url') or ev.get('title') or '?'}")
         if not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", ev.get("start", "")):
             errors.append(f"bad start time: {ev.get('title')}")
+        if not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", ev.get("end", "")):
+            errors.append(f"bad end time: {ev.get('title')}")
         if ev.get("start", "") > ev.get("end", ""):
             errors.append(f"start after end: {ev.get('title')}")
     if not any(ev.get("featured") for ev in events):

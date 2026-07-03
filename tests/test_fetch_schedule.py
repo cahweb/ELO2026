@@ -89,6 +89,11 @@ class PayloadTests(unittest.TestCase):
         bad["events"][0]["title"] = ""
         self.assertNotEqual(validate(bad), [])
 
+    def test_bad_end_format_fails(self):
+        bad = build_payload(self.events, self.links, "2026-07-03T12:00:00Z")
+        bad["events"][5]["end"] = "2026-07-15T99:99"
+        self.assertNotEqual(validate(bad), [])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: fetch-schedule
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
