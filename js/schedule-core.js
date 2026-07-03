@@ -15,7 +15,7 @@ function formatTime(iso, timeZone) {
     hour: "numeric",
     minute: "2-digit",
     timeZone,
-  }).format(new Date(iso)).replace(/[  ]/g, " ");
+  }).format(new Date(iso)).replace(/[\u202f\u00a0]/g, " ");
 }
 
 export function formatTimeRange(startIso, endIso, timeZone) {
