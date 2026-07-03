@@ -36,8 +36,8 @@ function renderSchedule(events, timeZone) {
   container.innerHTML = groups
     .map(
       (group) => `
-      <section aria-labelledby="day-${group.key}">
-        <h2 class="day-heading" id="day-${group.key}">${esc(group.label)}</h2>
+      <section aria-labelledby="day-${esc(group.key)}">
+        <h2 class="day-heading" id="day-${esc(group.key)}">${esc(group.label)}</h2>
         <ul class="event-list">
           ${group.events
             .map(
