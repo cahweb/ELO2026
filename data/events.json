@@ -1,0 +1,1126 @@
+{
+  "generated": "2026-07-03T16:37:57Z",
+  "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
+  "events": [
+    {
+      "title": "ELO 2026 (Un)Supervised Conference Welcome Remarks",
+      "url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/1",
+      "presenters": "Anastasia Salter, University of Central Florida",
+      "track": "Algorithms & Imaginaries",
+      "type": "Plenary",
+      "start": "2026-07-15T16:30:00Z",
+      "end": "2026-07-15T16:45:00Z",
+      "featured": true
+    },
+    {
+      "title": "Keynote: Lillian-Yvonne Bertram",
+      "url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/3",
+      "presenters": "Lillian-Yvonne Bertram, University of Maryland - Baltimore",
+      "track": "Algorithms & Imaginaries",
+      "type": "Keynote",
+      "start": "2026-07-15T17:00:00Z",
+      "end": "2026-07-15T18:00:00Z",
+      "featured": true
+    },
+    {
+      "title": "AI-Generated Code + E-Poetry: Exploring the possibilities of digital poetry with AI generated code in TouchDesigner",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/4",
+      "presenters": "Roque Fernández Alcañiz, Universidade de Santiago de Compostela",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-15T18:15:00Z",
+      "end": "2026-07-15T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Connected/Disconnected",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/5",
+      "presenters": "Emery Beckman, University of Central Florida",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-15T18:15:00Z",
+      "end": "2026-07-15T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Intro to Scrollimation: Principles and Practices",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/1",
+      "presenters": "Artemio Morales, AltSalt",
+      "track": "Hypertexts & Fictions",
+      "type": "Workshop",
+      "start": "2026-07-15T18:15:00Z",
+      "end": "2026-07-15T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Name that face—Wikimedia images",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/1",
+      "presenters": "Denise Larsen, Independent",
+      "track": "Narratives & Worlds",
+      "type": "Workshop",
+      "start": "2026-07-15T18:15:00Z",
+      "end": "2026-07-15T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "The Shadow of Situationism: AI-Generated Poetry at the Avant-Garde of the Avant-Garde",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/3",
+      "presenters": "Francisco Reyes Betancourtt, University of California, Irvine",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-15T18:15:00Z",
+      "end": "2026-07-15T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Words Have Their Final Weapon: AI and Six Decades of Generating “Japanese Poetry”",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/2",
+      "presenters": "Andrew Campana, Cornell University",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-15T18:15:00Z",
+      "end": "2026-07-15T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Edit the Peeragogy Wikibook",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/2",
+      "presenters": "Charles Danoff, Mr. Danoff’s Teaching Laboratory, LLC",
+      "track": "Hypertexts & Fictions",
+      "type": "Workshop",
+      "start": "2026-07-15T19:30:00Z",
+      "end": "2026-07-15T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "High-Performance Spatial Text: Ludic Constriction and Narrative Performance in XR Game Engines",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/2",
+      "presenters": "patrick lichty, Winona State University",
+      "track": "Narratives & Worlds",
+      "type": "Workshop",
+      "start": "2026-07-15T19:30:00Z",
+      "end": "2026-07-15T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Making the Writer’s Project",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/8",
+      "presenters": "Alex Calderwood, University of California, Santa Cruz",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-15T19:30:00Z",
+      "end": "2026-07-15T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Singulars: Performing the Reverse Turing Test",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/6",
+      "presenters": "Halim Madi",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-15T19:30:00Z",
+      "end": "2026-07-15T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Solar Powered Alba Generator",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/9",
+      "presenters": "Allison Parrish",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-15T19:30:00Z",
+      "end": "2026-07-15T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "The Subcutanean Variorum",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/7",
+      "presenters": "Mark Sample, Davidson College",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-15T19:30:00Z",
+      "end": "2026-07-15T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "On the Peripheries of E-lit: Study Digital Literary Cultures (Plus)",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/3",
+      "presenters": "Kiera Obbard, University of Waterloo Tanja Grubnic, Duke University Magdalena E. Korecka, University of Hamburg Kim Martin, University of Guelph Tess McNulty, University of Illinois at Urbana-Champaign Camilla Holm-Soelseth, Oslo Metropolitan University",
+      "track": "Hypertexts & Fictions",
+      "type": "Panel",
+      "start": "2026-07-15T20:45:00Z",
+      "end": "2026-07-15T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "Out Of This World: An Exoplanetary Workshop",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/3",
+      "presenters": "Monica Storss, Northeastern University Bart Kuipers, SETI Institute",
+      "track": "Narratives & Worlds",
+      "type": "Workshop",
+      "start": "2026-07-15T20:45:00Z",
+      "end": "2026-07-15T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "ELO (Un)Supervised Exhibition Launch",
+      "url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/2",
+      "presenters": "Daniel Cox, Illinois State University R. Lyle Skains, Bournemouth University",
+      "track": "Algorithms & Imaginaries",
+      "type": "Plenary",
+      "start": "2026-07-15T23:00:00Z",
+      "end": "2026-07-16T00:30:00Z",
+      "featured": true
+    },
+    {
+      "title": "A Human Was Here: Occult Poetics, Hypertext Ritual, and the (Un)Supervised Web",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/5",
+      "presenters": "Emily Carr, Nectar, Inc.",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-16T13:15:00Z",
+      "end": "2026-07-16T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Coercing Contribution: Navigating Involuntary Authors through a Mountain of Sleep",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/6",
+      "presenters": "Glenn S. Ritchey III, University of Central Florida",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-16T13:15:00Z",
+      "end": "2026-07-16T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Nilo Ybyraporã: transcestral instapoetry",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/5",
+      "presenters": "Daniela Silva de Freitas, Universidade Federal de Alfenas",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T13:15:00Z",
+      "end": "2026-07-16T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Perverse Pleasure: A Defence of Difficulty Without Resolution",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/4",
+      "presenters": "Joy Pang, National University of Singapore",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-16T13:15:00Z",
+      "end": "2026-07-16T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Poetry of Movement: Virality, Affect and Agency in Warsan Shire’s “Home”",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/4",
+      "presenters": "Shweta Khilnani",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T13:15:00Z",
+      "end": "2026-07-16T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Publishing Electronic Literature Research in Metric-Driven Academia: A Roadmap for Electronic Literature Scholars",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/10",
+      "presenters": "Samya Brata Roy, Gitam (Deemed) University, Hyderabad Shanmugapriya T, Indian Institute of Technology, Indian School of Mines, Dhanbad Mehulkumar Desai, Indian Institute of Technology, Indian School of Mines, Dhanbad",
+      "track": "Algorithms & Imaginaries",
+      "type": "Workshop",
+      "start": "2026-07-16T13:15:00Z",
+      "end": "2026-07-16T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Reimaging Authorship in Contemporary Chinese Poetry",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/6",
+      "presenters": "zhijing wang, Nanyang Technological University, Singapore",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T13:15:00Z",
+      "end": "2026-07-16T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Start typing… Digital Poetry in Latin America",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/7",
+      "presenters": "Alex Saum-Pascual Saum-Pascual, University of California, Berkeley Élika Ortega-Guzman, University of Colorado, Boulder",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T13:15:00Z",
+      "end": "2026-07-16T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "(Un)Supervised Critical Baking: Reflective Virtual Cheesecake Simulation",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/10",
+      "presenters": "Emily Johnson, University of Central Florida Vee Kennedy, University of Central Florida",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T14:30:00Z",
+      "end": "2026-07-16T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "A multi-language video game dialogue corpus",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/9",
+      "presenters": "Mark A. Black, Washington State University",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-16T14:30:00Z",
+      "end": "2026-07-16T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Eventization and the Community Aspect of Demoparties: A case study of Silly Venture, Last Party and Lost Party",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/8",
+      "presenters": "Piotr Marecki, Jagiellonian University, Kraków Krzysztof A. Ziembik, Jagiellonian University, Kraków Patryk Ciesielczyk, Jagiellonian University, Kraków",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-16T14:30:00Z",
+      "end": "2026-07-16T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Hosting the Gap: Digital Typography as Linguistic Hospitality in Translation",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/9",
+      "presenters": "Maya Sarfaty, Universidade de Lisboa",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T14:30:00Z",
+      "end": "2026-07-16T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Miniature Novels Inside Code: Reflection Scenes as Emergent Literary Form in ChoiceScript",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/10",
+      "presenters": "Matthew F. Griffin, New York University",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-16T14:30:00Z",
+      "end": "2026-07-16T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Narrative Nubs: Systematic Sketches of Story Systems",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/7",
+      "presenters": "Nick Montfort, Massachusetts Institute of Technology",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-16T14:30:00Z",
+      "end": "2026-07-16T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Never Let It Collapse: Three Passes at an Unsupervised Cat's Cradle",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/11",
+      "presenters": "Caitlin Fisher, York University",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T14:30:00Z",
+      "end": "2026-07-16T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Portuguese Net Art and e-Poetics",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/11",
+      "presenters": "Johanna Drucker Sofia Ponte, IADE Rui Torres, University Fernando Pessoa Diogo Marques, University of Porto Manuel Portela, University of Coimbr",
+      "track": "Algorithms & Imaginaries",
+      "type": "Panel",
+      "start": "2026-07-16T14:30:00Z",
+      "end": "2026-07-16T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Quilt Poems: Encoding Craft Traditions as Generative Poetry",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/8",
+      "presenters": "Lee Tusman, SUNY Purchase",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T14:30:00Z",
+      "end": "2026-07-16T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "(Un)easily Writing the Future",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/1",
+      "presenters": "Stuart Moulthrop, University of Wisconsin–Milwaukee Judith Pintar, University of Illinois at Urbana-Champaign John G. McDaid, Roger Williams University",
+      "track": "Algorithms & Imaginaries",
+      "type": "Panel",
+      "start": "2026-07-16T17:00:00Z",
+      "end": "2026-07-16T18:00:00Z",
+      "featured": false
+    },
+    {
+      "title": "Post-Digital Creativity in Underacknowledged Communities",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/12",
+      "presenters": "Tegan Pyke, University of Bergen Hannah Ackermans, University of Bergen Zahra Rizvi, University of Bergen",
+      "track": "Narratives & Worlds",
+      "type": "Panel",
+      "start": "2026-07-16T18:15:00Z",
+      "end": "2026-07-16T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Storyboarding for Scrollimation",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/11",
+      "presenters": "Artemio Morales, AltSalt",
+      "track": "Hypertexts & Fictions",
+      "type": "Workshop",
+      "start": "2026-07-16T18:15:00Z",
+      "end": "2026-07-16T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Techno-Human Desire or Techno, Human Desire? Sensuality and Machine Texts.",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/12",
+      "presenters": "Chloe M. A. Mauvais, University of California - Berkeley Paz Regueiro, University of California - Berkeley Joseph Rager, University of California - Berkeley",
+      "track": "Algorithms & Imaginaries",
+      "type": "Panel",
+      "start": "2026-07-16T18:15:00Z",
+      "end": "2026-07-16T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "CELL Project Roundtable 2026",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/12",
+      "presenters": "Davin Heckman",
+      "track": "Hypertexts & Fictions",
+      "type": "Panel",
+      "start": "2026-07-16T19:30:00Z",
+      "end": "2026-07-16T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Cooperation, Collaboration, and Community in Horror and Suspense Games",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/13",
+      "presenters": "Rachel Kerr, University of Texas at Dallas Monica Evans, University of Texas at Dallas Cameron Irby, University of Texas at Dallas Cheri Tang, University of Texas at Dallas",
+      "track": "Narratives & Worlds",
+      "type": "Panel",
+      "start": "2026-07-16T19:30:00Z",
+      "end": "2026-07-16T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "E-Lit Periodicals in the Age of AI",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/13",
+      "presenters": "Peter D. Edgar, University of Central Florida Glenn S. Ritchey III, University of Central Florida Kiera Obbard, University of Waterloo Kavi Duvvoori, University of Waterloo Margot Machado Knuth, Universitat Oberta de Catalunya",
+      "track": "Algorithms & Imaginaries",
+      "type": "Panel",
+      "start": "2026-07-16T19:30:00Z",
+      "end": "2026-07-16T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Boîte en Valise / Writing Inside the Box : Local Virtual Space and Creative Exigencies",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/15",
+      "presenters": "patrick lichty, Winona State University",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "Co-Habited Texts: Designing Cooperative Interactive Fiction as Auto-Ethnographic Method",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/17",
+      "presenters": "Abhik Hasnain, University of Alberta Adeline K. Piercy, University of Alberta",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "Compressed Cinema as a Study in LLM Latent Spaces",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/14",
+      "presenters": "Mallen Clifton, Stanford University",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "From Voice to Environment: Authorship in Spatial Collage",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/16",
+      "presenters": "Daniel Lichtman, St. John’s university",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "National Fictions: Reading the Free Republic of Verdis as Electronic Literature",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/16",
+      "presenters": "Elizabeth Losh, William & Mary",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "Necrotextual Poetics: Fine-Tuned Language Models and Oscar Wilde's Unfinished Aphorism",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/14",
+      "presenters": "Zach Whalen",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "Red-Teaming GenAI Chatbots: Toxic “Talk” & Product Liability",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/17",
+      "presenters": "Siobhan O'Flynn, University of Toronto",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "Remaking the Red Death: An Interactive Fiction Post-mortem",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/15",
+      "presenters": "Kenton T. Howard, University of Central Florida",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "Thinking Ahead about Your Legacy: A Workshop Aimed at Preparing Your Archives for Future Access",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/13",
+      "presenters": "Dene Grigar Holly Slocum, Washington State University Vancouver Greg Philbrook, Washington State University Vancouver James Lesperance, washington state university Vancouver Ruth Woodcock, Washington State University Vancouver",
+      "track": "Hypertexts & Fictions",
+      "type": "Workshop",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "Authority Figures",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/21",
+      "presenters": "John Murray, University of Central Florida Mark C. Marino, University of Southern California Maria Cecilia Reyes, Universidad del Norte - Colombia",
+      "track": "Algorithms & Imaginaries",
+      "type": "Performance",
+      "start": "2026-07-16T23:00:00Z",
+      "end": "2026-07-17T00:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Hacking Stone Moons: Or, a Re-viving a still born child A behind-the-scenes melodrama in three acts.",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/18",
+      "presenters": "Denise Larsen, Independent Claire Leyden, WSUV Quinn Carrick, WSUV Jenn Duyen, WSUV",
+      "track": "Algorithms & Imaginaries",
+      "type": "Performance",
+      "start": "2026-07-16T23:00:00Z",
+      "end": "2026-07-17T00:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "The Female Voice, The Male Gaze: AI Colonial Paradox and African Feminist Futures",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/19",
+      "presenters": "Aishat Olayetunde Isiaq Mrs, The Nigeria French Language Village Ajara Badagry Lagos, Nigeria",
+      "track": "Algorithms & Imaginaries",
+      "type": "Performance",
+      "start": "2026-07-16T23:00:00Z",
+      "end": "2026-07-17T00:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "\"I Believe You\": Unsupervised Unlearning in a Human–AI Philosophical Encounter",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/22",
+      "presenters": "Xiang Yu, Independent",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "A Machine That Eats Books: Reflecting on the Impact of AI on Our Understanding of Reality Through Inkle’s TR-49",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/24",
+      "presenters": "Alex Mitchell, National University of Singapore",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "AFOA.NZ / A Flight Over Aotearoa New Zealand: Epistolary E-Lit in an Interactive Videobook for Children",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/15",
+      "presenters": "Gisela De Castro Mrs., The University of Waikato",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Blurring Ontologies: An Analysis of Metalepsis in Mark C. Marino’s Living Will (2010)",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/25",
+      "presenters": "Lopamudra Saha Ms, Pondicherry University",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Coaxing the Ripples: thoughts on distant writing of interactive works",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/17",
+      "presenters": "Terhi Marttila, Interactive technologies Institute / LARSyS Jay David Bolter, Georgia Institute of Technology Watson Hartsoe, Georgia Institute of Technology",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Exploring fractures in the intimate technology shaping millions of lives",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/19",
+      "presenters": "Christine Wilks, Independent artist researcher",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "In Dark times, Should the Stars Also Go Out?: Disco Elysium & Melancholic Agency",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/21",
+      "presenters": "Shannon Lee Ms, National University of Singapore",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Migritude in the Digital Space: An Analysis of Migration Narratives in Twenty-First-Century Electronic Literature",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/20",
+      "presenters": "Ruth Oluyemi Akande, University of Lagos",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Network of Time: Reading History Through Photographic Adjacency",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/18",
+      "presenters": "Jesse M. Ward",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Supervising the Creation of New Forms of Philosophy",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/23",
+      "presenters": "Sebastian R. Richter, University of Regensburg",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Twice,again: Virentis – Bounded (Un)Supervision as World-Building Method",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/14",
+      "presenters": "Andrew Burrell Dr, University of Technology Sydney",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Water Songs: An artist’s talk discussing “Documenting the Imperceptible”",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/16",
+      "presenters": "Jolene L. Armstrong, Athabasca University Monique Tschofen, Toronto Metropolitan University",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T13:15:00Z",
+      "end": "2026-07-17T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "(Un)Supervised Translation: How Fans Fill in the Gaps in Visual Novel Localization",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/19",
+      "presenters": "Sara Raffel, University of Central Florida Mónica G. González Burgos, University of Central Florida",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Code poetry and labour: the game excess of work",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/22",
+      "presenters": "María Garay Arriba, Universidad de Salamanca, Spain",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Conflicting agencies at the heart of literariness",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/21",
+      "presenters": "Ana Marques da Silva, University of Coimbra",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Electronic Literature in AI data work",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/25",
+      "presenters": "Mihai Bacaran, Independent",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Positioning Electronic literature as an Emerging Creative Industry in the Majority World: A Comparative Analysis with Video Games and Digital Arts",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/24",
+      "presenters": "Mehulkumar Desai Mr., Indian Institute of Technology, Indian School of Mines, Dhanbad",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Posthuman Ethics and Networked Agency in AI-Human Cocreations",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/18",
+      "presenters": "Liselotte de Beer, University of Stavanger",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "The Headless Seven: A Live Hydraen Field Experiment",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/26",
+      "presenters": "Lyle Skains, Wonderbox Digital",
+      "track": "Algorithms & Imaginaries",
+      "type": "Experimental Track",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "The Implications of Generative-AI User Prompt Engineering Shaping the Absent Presence of Latino Women Textual Rhetoric in LLMs",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/23",
+      "presenters": "Angely C. Suarez DeJesus",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "“Huir sí es mejor plan”: Rethinking the Subject in Digital Literature",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/20",
+      "presenters": "Fernanda Mugica, Universidad Nacional de Mar del Plata",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Plenary: Electronic Literature Collective 5",
+      "url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/4",
+      "presenters": "Daniel Cox, Illinois State University Zach Whalen Élika Ortega-Guzman, University of Colorado, Boulder Dani Spinosa",
+      "track": "Algorithms & Imaginaries",
+      "type": "Keynote",
+      "start": "2026-07-17T17:00:00Z",
+      "end": "2026-07-17T18:00:00Z",
+      "featured": true
+    },
+    {
+      "title": "An/archivism, Chronopoetics, and Experimentation: Transformations of Literary and Artistic Creation in the Era of Generative AI",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/27",
+      "presenters": "Claudia Kozak, UBA/CONICET Carolina Gainza, Universidad Diego Portales Jhoerson Yagmour Figuera, Universidad Católica de Chile Milton Läufer Verónica Paula Gómez, Freie Universität Berlin Wolfgang Bongers, Universidad Católica de Chile",
+      "track": "Algorithms & Imaginaries",
+      "type": "Panel",
+      "start": "2026-07-17T18:15:00Z",
+      "end": "2026-07-17T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Archival Storytelling: Remembering Our Digital History",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/23",
+      "presenters": "Dene Grigar",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T18:15:00Z",
+      "end": "2026-07-17T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Digitally Disfiguring the Canon",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/22",
+      "presenters": "David T.H. Wright, University of Bergen",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T18:15:00Z",
+      "end": "2026-07-17T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Performing Comedy in the Virtual Space; Helping Society Get Over Itself",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/26",
+      "presenters": "Rob Wittig, Meanwhile Netprov Studio Mandy Canales, Washington State University Mark C. Marino, University of Southern California",
+      "track": "Narratives & Worlds",
+      "type": "Workshop",
+      "start": "2026-07-17T18:15:00Z",
+      "end": "2026-07-17T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "“You can see Note 23 here.”: Conceptualizing Critical Editions of Interactive Fiction",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/25",
+      "presenters": "Jason Boyd, Toronto Metropolitan University",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T18:15:00Z",
+      "end": "2026-07-17T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Inventing ELIZA: an exploration of the first chatbot",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/28",
+      "presenters": "Mark Marino, University of Southern California Sarah Ciston David Berry Anthony Hay Jeff Shrager Arthur Schwarz Peter Millican",
+      "track": "Algorithms & Imaginaries",
+      "type": "Panel",
+      "start": "2026-07-17T19:30:00Z",
+      "end": "2026-07-17T20:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Essay on the future of writing-reading: thought, meditation and synchronicities",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/29",
+      "presenters": "Vinicius Marquet, National University Autonomous of Mexico",
+      "track": "Algorithms & Imaginaries",
+      "type": "Experimental Track",
+      "start": "2026-07-17T20:45:00Z",
+      "end": "2026-07-18T00:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Inscription",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/30",
+      "presenters": "Xiang Yu, Independent",
+      "track": "Algorithms & Imaginaries",
+      "type": "Performance",
+      "start": "2026-07-17T23:00:00Z",
+      "end": "2026-07-18T00:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Latent Laughing Medusa",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/33",
+      "presenters": "Judd Morrissey, School of the Art Institute of Chicago",
+      "track": "Algorithms & Imaginaries",
+      "type": "Performance",
+      "start": "2026-07-17T23:00:00Z",
+      "end": "2026-07-18T00:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Surveillance as Care: Introducing the PureGenius™ Learning Platform",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/32",
+      "presenters": "Erin R. Glass, CUNY Graduate Center",
+      "track": "Algorithms & Imaginaries",
+      "type": "Performance",
+      "start": "2026-07-17T23:00:00Z",
+      "end": "2026-07-18T00:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "man.A.machine.txt",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/31",
+      "presenters": "James H. Pardue, SUNY University at Buffalo",
+      "track": "Algorithms & Imaginaries",
+      "type": "Performance",
+      "start": "2026-07-17T23:00:00Z",
+      "end": "2026-07-18T00:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Coding a Poetics of Love and Politics: On the Remixing Potentials of Christopher Strachey and Lillian-Yvonne Bertram’s Poem Generators",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/37",
+      "presenters": "Tiffany Fung, The Chinese University of Hong Kong",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-18T13:15:00Z",
+      "end": "2026-07-18T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Coding the Wild: Digital Poetics, Artificial Intelligence, and More-Than-Human Futures in Mechanical Treehouse",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/34",
+      "presenters": "Yolanda De Gregorio, University of Cadiz",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-18T13:15:00Z",
+      "end": "2026-07-18T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "From AI to EI: Towards an ‘Environmental Intelligence’",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/35",
+      "presenters": "Richard A. Carter, University of York",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-18T13:15:00Z",
+      "end": "2026-07-18T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "How Firm is Our Foundation? : Towards a Pedagogy of AI",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/28",
+      "presenters": "Katherine Parrish Ms., Independent Scholar",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-18T13:15:00Z",
+      "end": "2026-07-18T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Reorienting Electronic Literature",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/26",
+      "presenters": "Mehulkumar Desai, Indian Institute of Technology, Indian School of Mines, Dhanbad Shanmugapriya T, Indian Institute of Technology, Indian School of Mines, Dhanbad Leonardo Flores, Appalachian State University",
+      "track": "Hypertexts & Fictions",
+      "type": "Panel",
+      "start": "2026-07-18T13:15:00Z",
+      "end": "2026-07-18T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Small Changes, Large Effects: A Chaos Theory Framework for Electronic Literature in Climate Education for Indian Primary Students",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/30",
+      "presenters": "Mumtaz Mazumdar Dr, M. C. Das College",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-18T13:15:00Z",
+      "end": "2026-07-18T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Teaching Writers to Think Queerly: Twine, Interactive Narrative, and the Unlearning of Linear Storytelling",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/27",
+      "presenters": "LJ Connolly, University of Central Florida",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-18T13:15:00Z",
+      "end": "2026-07-18T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Twine and Inky: A Hypertext Multi-tool for the Creative Writing Classroom",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/29",
+      "presenters": "Jeremy Andriano, Toronto Metropolitan University",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-18T13:15:00Z",
+      "end": "2026-07-18T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Vibe Coding: AI, Digital Text Recycling, and the Remediation of Digital Poetry",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/36",
+      "presenters": "Yohanna Joseph Waliya, The Nigeria French Language Village, Ajara-Badagry, Lagos, Nigeria",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-18T13:15:00Z",
+      "end": "2026-07-18T14:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Detour, Digress, Destroy (on random walks): Demoing a Platform for Text Manipulation",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/30",
+      "presenters": "Devin Higgins, Michigan State University",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-18T14:30:00Z",
+      "end": "2026-07-18T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Digital Nollywood as Interactive Narrative: Gender, Power, and Audience Rewriting",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/31",
+      "presenters": "Theodora Bassey Etim, University of Calabar, Nigeria",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-18T14:30:00Z",
+      "end": "2026-07-18T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Exiled to Latent Space: Writing from Dimensions We Cannot Enter",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/38",
+      "presenters": "Kavisha D. Alagiya, Maharaja Krishnakumarsinhji Bhavnagar University",
+      "track": "Algorithms & Imaginaries",
+      "type": "Workshop",
+      "start": "2026-07-18T14:30:00Z",
+      "end": "2026-07-18T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Human Digital Interaction",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/27",
+      "presenters": "Kirill Azernyi",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-18T14:30:00Z",
+      "end": "2026-07-18T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "New Beginnings",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/28",
+      "presenters": "Brendan Howell, The Howell Ersatz Co. Jenni Bohn, Burg Hülshoff Center for Literature Andreas Bülhoff, sync.ed / Spoken Matter",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-18T14:30:00Z",
+      "end": "2026-07-18T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Reacting to Electronic Literature in Akwa Ibom State, Nigeria",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/34",
+      "presenters": "Faith Samuel Bassey, University of Uyo, Nigeria",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-18T14:30:00Z",
+      "end": "2026-07-18T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "The Question is a Node: Online Quizzes as Interactive Non-Fiction",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/29",
+      "presenters": "Michael Merriam, Independent",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-18T14:30:00Z",
+      "end": "2026-07-18T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Unsupervised Pedagogy and Electronic Literature under Infrastructural Constraint: Experiences from Calabar",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/32",
+      "presenters": "Lilian Okoro",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-18T14:30:00Z",
+      "end": "2026-07-18T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Unsupervised: Shedding Light on South African Digital Poetry",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/33",
+      "presenters": "Jasmine Mattey, University of Bergen",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-18T14:30:00Z",
+      "end": "2026-07-18T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Keynote: Leonardo Flores, \"Beyond Impossible Writing: Electronic Literature in the Age of AI\"",
+      "url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/5",
+      "presenters": "Leonardo Flores, Appalachian State University",
+      "track": "Algorithms & Imaginaries",
+      "type": "Keynote",
+      "start": "2026-07-18T17:00:00Z",
+      "end": "2026-07-18T18:00:00Z",
+      "featured": true
+    },
+    {
+      "title": "\"The First Web Novel at 30: The Collection and the Creative Process\"",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/31",
+      "presenters": "Robert Arellano Scott Rettberg, University of Bergen",
+      "track": "Hypertexts & Fictions",
+      "type": "Panel",
+      "start": "2026-07-18T18:15:00Z",
+      "end": "2026-07-18T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Algorithmic Narrators: Linguistic Boundaries and Institutionalized Cultural Storytelling Across Generative AI Systems",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/40",
+      "presenters": "Yingzi Kong",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-18T18:15:00Z",
+      "end": "2026-07-18T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Algorithmic Translation versus Human Imagination in Electronic Storytelling",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/39",
+      "presenters": "Dr. Gloria Wilson Inyang, Akwa Ibom State College of Education",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-18T18:15:00Z",
+      "end": "2026-07-18T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Once Upon an Algorithm: Ebook Authors’ AI Folk Theories and the Standardization of Creative Practice",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/41",
+      "presenters": "Bridget Kies, Oakland University",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-18T18:15:00Z",
+      "end": "2026-07-18T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "When AI Magic Meets Creative Writing: The AI Noberisuto Literary Prize and the Boundaries of Non-human (Co)authorship",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/42",
+      "presenters": "Kateryna Shabelnyk, Nagoya University",
+      "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-18T18:15:00Z",
+      "end": "2026-07-18T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Plenary: ELO Town Hall",
+      "url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/6",
+      "presenters": "Anastasia Salter, University of Central Florida",
+      "track": "Algorithms & Imaginaries",
+      "type": "Plenary",
+      "start": "2026-07-18T19:30:00Z",
+      "end": "2026-07-18T20:30:00Z",
+      "featured": true
+    },
+    {
+      "title": "2026 Electronic Literature Awards Ceremony and Closing Remarks",
+      "url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/7",
+      "presenters": "Anastasia Salter, University of Central Florida Jason Nelson, University of Bergen Alinta Krauth, University of Bergen",
+      "track": "Algorithms & Imaginaries",
+      "type": "Plenary",
+      "start": "2026-07-18T20:45:00Z",
+      "end": "2026-07-18T21:45:00Z",
+      "featured": true
+    }
+  ]
+}

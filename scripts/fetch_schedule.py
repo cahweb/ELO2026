@@ -101,3 +101,32 @@ def validate(payload):
     if not any(ev.get("featured") for ev in events):
         errors.append("no featured events matched the RSS feed")
     return errors
+
+
+def _fetch(url):
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        return resp.read().decode("utf-8")
+
+
+def main():
+    events = parse_schedule(_fetch(SCHEDULE_URL))
+    rss_links = parse_rss_links(_fetch(RSS_URL))
+    generated = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    payload = build_payload(events, rss_links, generated)
+    errors = validate(payload)
+    if errors:
+        for err in errors:
+            print(f"ERROR: {err}", file=sys.stderr)
+        return 1
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print(f"Wrote {len(payload['events'])} events to {OUTPUT}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
