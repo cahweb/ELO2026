@@ -2,9 +2,10 @@ import json
 import unittest
 from pathlib import Path
 
-from scripts.fetch_schedule import parse_schedule, _to_utc_iso
+from scripts.fetch_schedule import parse_schedule, _to_utc_iso, parse_rss_links, build_payload, validate
 
 FIXTURE = Path(__file__).parent / "fixtures" / "combined_schedule.html"
+RSS_FIXTURE = Path(__file__).parent / "fixtures" / "recent-events.rss"
 
 
 class ToUtcIsoTests(unittest.TestCase):
@@ -49,6 +50,44 @@ class ParseScheduleTests(unittest.TestCase):
         titles = " ".join(e["title"] for e in self.events)
         self.assertNotIn("&quot;", titles)
         self.assertNotIn("&amp;", titles)
+
+
+class RssTests(unittest.TestCase):
+    def test_extracts_seven_links(self):
+        links = parse_rss_links(RSS_FIXTURE.read_text(encoding="utf-8"))
+        self.assertEqual(len(links), 7)
+        self.assertIn("https://stars.library.ucf.edu/elo2026/combined_schedule/all/1", links)
+
+
+class PayloadTests(unittest.TestCase):
+    def setUp(self):
+        self.events = parse_schedule(FIXTURE.read_text(encoding="utf-8"))
+        self.links = parse_rss_links(RSS_FIXTURE.read_text(encoding="utf-8"))
+        self.payload = build_payload(self.events, self.links, "2026-07-03T12:00:00Z")
+
+    def test_featured_events_marked(self):
+        featured = [e for e in self.payload["events"] if e["featured"]]
+        self.assertEqual(len(featured), 7)
+
+    def test_events_sorted_by_start(self):
+        starts = [e["start"] for e in self.payload["events"]]
+        self.assertEqual(starts, sorted(starts))
+
+    def test_payload_shape(self):
+        self.assertEqual(self.payload["generated"], "2026-07-03T12:00:00Z")
+        self.assertEqual(self.payload["source"], "https://stars.library.ucf.edu/elo2026/combined_schedule/")
+
+    def test_valid_payload_passes(self):
+        self.assertEqual(validate(self.payload), [])
+
+    def test_too_few_events_fails(self):
+        small = build_payload(self.events[:3], self.links, "2026-07-03T12:00:00Z")
+        self.assertTrue(any("50" in e for e in validate(small)))
+
+    def test_missing_title_fails(self):
+        bad = build_payload(self.events, self.links, "2026-07-03T12:00:00Z")
+        bad["events"][0]["title"] = ""
+        self.assertNotEqual(validate(bad), [])
 
 
 if __name__ == "__main__":

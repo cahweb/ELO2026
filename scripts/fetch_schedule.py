@@ -73,3 +73,31 @@ def parse_schedule(html):
             "end": _to_utc_iso(end),
         })
     return events
+
+
+def parse_rss_links(xml):
+    return set(re.findall(r"<item>.*?<link>\s*(\S+?)\s*</link>", xml, re.S))
+
+
+def build_payload(events, rss_links, generated):
+    out = []
+    for ev in sorted(events, key=lambda e: (e["start"], e["title"])):
+        out.append({**ev, "featured": ev["url"] in rss_links})
+    return {"generated": generated, "source": SCHEDULE_URL, "events": out}
+
+
+def validate(payload):
+    errors = []
+    events = payload.get("events", [])
+    if len(events) < MIN_EVENTS:
+        errors.append(f"only {len(events)} events parsed; expected at least {MIN_EVENTS}")
+    for ev in events:
+        if not ev.get("title") or not ev.get("url"):
+            errors.append(f"event missing title/url: {ev.get('url') or ev.get('title') or '?'}")
+        if not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", ev.get("start", "")):
+            errors.append(f"bad start time: {ev.get('title')}")
+        if ev.get("start", "") > ev.get("end", ""):
+            errors.append(f"start after end: {ev.get('title')}")
+    if not any(ev.get("featured") for ev in events):
+        errors.append("no featured events matched the RSS feed")
+    return errors
