@@ -1,7 +1,17 @@
 {
-  "generated": "2026-07-10T19:54:25Z",
+  "generated": "2026-07-11T03:45:52Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
+    {
+      "title": "Name that face—Wikimedia images",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/1",
+      "presenters": "Deena Larsen, Independent",
+      "track": "Narratives & Worlds",
+      "type": "Workshop",
+      "start": "2026-07-15T04:00:00Z",
+      "end": "2026-07-15T04:00:00Z",
+      "featured": false
+    },
     {
       "title": "ELO 2026 (Un)Supervised Conference Welcome Remarks",
       "url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/1",
@@ -47,16 +57,6 @@
       "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/1",
       "presenters": "Artemio Morales, AltSalt",
       "track": "Hypertexts & Fictions",
-      "type": "Workshop",
-      "start": "2026-07-15T18:15:00Z",
-      "end": "2026-07-15T19:15:00Z",
-      "featured": false
-    },
-    {
-      "title": "Name that face—Wikimedia images",
-      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/1",
-      "presenters": "Denise Larsen, Independent",
-      "track": "Narratives & Worlds",
       "type": "Workshop",
       "start": "2026-07-15T18:15:00Z",
       "end": "2026-07-15T19:15:00Z",
@@ -171,6 +171,16 @@
       "start": "2026-07-15T23:00:00Z",
       "end": "2026-07-16T00:30:00Z",
       "featured": true
+    },
+    {
+      "title": "Hacking Stone Moons: Or, a Re-viving a still born child A behind-the-scenes melodrama in three acts.",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/18",
+      "presenters": "Deena Larsen, Independent Claire Leyden, WSUV Quinn Carrick, WSUV Jenn Duyen, WSUV",
+      "track": "Algorithms & Imaginaries",
+      "type": "Performance",
+      "start": "2026-07-16T04:00:00Z",
+      "end": "2026-07-16T04:00:00Z",
+      "featured": false
     },
     {
       "title": "A Human Was Here: Occult Poetics, Hypertext Ritual, and the (Un)Supervised Web",
@@ -506,16 +516,6 @@
       "title": "Authority Figures",
       "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/21",
       "presenters": "John Murray, University of Central Florida Mark C. Marino, University of Southern California Maria Cecilia Reyes, Universidad del Norte - Colombia",
-      "track": "Algorithms & Imaginaries",
-      "type": "Performance",
-      "start": "2026-07-16T23:00:00Z",
-      "end": "2026-07-17T00:30:00Z",
-      "featured": false
-    },
-    {
-      "title": "Hacking Stone Moons: Or, a Re-viving a still born child A behind-the-scenes melodrama in three acts.",
-      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/18",
-      "presenters": "Denise Larsen, Independent Claire Leyden, WSUV Quinn Carrick, WSUV Jenn Duyen, WSUV",
       "track": "Algorithms & Imaginaries",
       "type": "Performance",
       "start": "2026-07-16T23:00:00Z",
