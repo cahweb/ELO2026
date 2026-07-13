@@ -1,17 +1,7 @@
 {
-  "generated": "2026-07-12T19:35:38Z",
+  "generated": "2026-07-13T04:03:47Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
-    {
-      "title": "Name that face—Wikimedia images",
-      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/1",
-      "presenters": "Deena Larsen, Independent",
-      "track": "Narratives & Worlds",
-      "type": "Workshop",
-      "start": "2026-07-15T04:00:00Z",
-      "end": "2026-07-15T04:00:00Z",
-      "featured": false
-    },
     {
       "title": "ELO 2026 (Un)Supervised Conference Welcome Remarks",
       "url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/1",
@@ -57,6 +47,16 @@
       "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/1",
       "presenters": "Artemio Morales, AltSalt",
       "track": "Hypertexts & Fictions",
+      "type": "Workshop",
+      "start": "2026-07-15T18:15:00Z",
+      "end": "2026-07-15T19:15:00Z",
+      "featured": false
+    },
+    {
+      "title": "Name that face—Wikimedia images",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/1",
+      "presenters": "Deena Larsen, Independent",
+      "track": "Narratives & Worlds",
       "type": "Workshop",
       "start": "2026-07-15T18:15:00Z",
       "end": "2026-07-15T19:15:00Z",
@@ -171,16 +171,6 @@
       "start": "2026-07-15T23:00:00Z",
       "end": "2026-07-16T00:30:00Z",
       "featured": true
-    },
-    {
-      "title": "Hacking Stone Moons: Or, a Re-viving a still born child A behind-the-scenes melodrama in three acts.",
-      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/18",
-      "presenters": "Deena Larsen, Independent Claire Leyden, WSUV Quinn Carrick, WSUV Jenn Duyen, WSUV",
-      "track": "Algorithms & Imaginaries",
-      "type": "Performance",
-      "start": "2026-07-16T04:00:00Z",
-      "end": "2026-07-16T04:00:00Z",
-      "featured": false
     },
     {
       "title": "A Human Was Here: Occult Poetics, Hypertext Ritual, and the (Un)Supervised Web",
@@ -523,9 +513,9 @@
       "featured": false
     },
     {
-      "title": "The Female Voice, The Male Gaze: AI Colonial Paradox and African Feminist Futures",
-      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/19",
-      "presenters": "Aishat Olayetunde Isiaq Mrs, The Nigeria French Language Village Ajara Badagry Lagos, Nigeria",
+      "title": "Hacking Stone Moons: Or, a Re-viving a still born child A behind-the-scenes melodrama in three acts.",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/18",
+      "presenters": "Deena Larsen, Independent Claire Leyden, WSUV Quinn Carrick, WSUV Jenn Duyen, WSUV",
       "track": "Algorithms & Imaginaries",
       "type": "Performance",
       "start": "2026-07-16T23:00:00Z",
@@ -533,13 +523,13 @@
       "featured": false
     },
     {
-      "title": "Positioning Electronic literature as an Emerging Creative Industry in the Majority World: A Comparative Analysis with Video Games and Digital Arts",
-      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/24",
-      "presenters": "Mehulkumar Desai Mr., Indian Institute of Technology, Indian School of Mines, Dhanbad Shanmugapriya T, Indian Institute of Technology (ISM) Dhanbad",
-      "track": "Narratives & Worlds",
-      "type": "Individual Talk",
-      "start": "2026-07-17T04:00:00Z",
-      "end": "2026-07-17T04:00:00Z",
+      "title": "The Female Voice, The Male Gaze: AI Colonial Paradox and African Feminist Futures",
+      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/19",
+      "presenters": "Aishat Olayetunde Isiaq Mrs, The Nigeria French Language Village Ajara Badagry Lagos, Nigeria",
+      "track": "Algorithms & Imaginaries",
+      "type": "Performance",
+      "start": "2026-07-16T23:00:00Z",
+      "end": "2026-07-17T00:30:00Z",
       "featured": false
     },
     {
@@ -696,6 +686,16 @@
       "title": "Electronic Literature in AI data work",
       "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/25",
       "presenters": "Mihai Bacaran, Independent",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "Positioning Electronic literature as an Emerging Creative Industry in the Majority World: A Comparative Analysis with Video Games and Digital Arts",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/24",
+      "presenters": "Mehulkumar Desai Mr., Indian Institute of Technology, Indian School of Mines, Dhanbad Shanmugapriya T, Indian Institute of Technology (ISM) Dhanbad",
       "track": "Narratives & Worlds",
       "type": "Individual Talk",
       "start": "2026-07-17T14:30:00Z",
