@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13T09:49:34Z",
+  "generated": "2026-07-13T15:14:28Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
     {
@@ -443,16 +443,6 @@
       "featured": false
     },
     {
-      "title": "From Voice to Environment: Authorship in Spatial Collage",
-      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/16",
-      "presenters": "Daniel Lichtman, St. John’s university",
-      "track": "Narratives & Worlds",
-      "type": "Individual Talk",
-      "start": "2026-07-16T20:45:00Z",
-      "end": "2026-07-16T21:45:00Z",
-      "featured": false
-    },
-    {
       "title": "National Fictions: Reading the Free Republic of Verdis as Electronic Literature",
       "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/16",
       "presenters": "Elizabeth Losh, William & Mary",
@@ -487,6 +477,16 @@
       "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/15",
       "presenters": "Kenton T. Howard, University of Central Florida",
       "track": "Algorithms & Imaginaries",
+      "type": "Individual Talk",
+      "start": "2026-07-16T20:45:00Z",
+      "end": "2026-07-16T21:45:00Z",
+      "featured": false
+    },
+    {
+      "title": "The Implications of Generative-AI User Prompt Engineering Shaping the Absent Presence of Latino Women Textual Rhetoric in LLMs",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/23",
+      "presenters": "Angely C. Suarez DeJesus",
+      "track": "Narratives & Worlds",
       "type": "Individual Talk",
       "start": "2026-07-16T20:45:00Z",
       "end": "2026-07-16T21:45:00Z",
@@ -693,6 +693,16 @@
       "featured": false
     },
     {
+      "title": "From Voice to Environment: Authorship in Spatial Collage",
+      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/16",
+      "presenters": "Daniel Lichtman, St. John’s university",
+      "track": "Narratives & Worlds",
+      "type": "Individual Talk",
+      "start": "2026-07-17T14:30:00Z",
+      "end": "2026-07-17T15:30:00Z",
+      "featured": false
+    },
+    {
       "title": "Positioning Electronic literature as an Emerging Creative Industry in the Majority World: A Comparative Analysis with Video Games and Digital Arts",
       "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/24",
       "presenters": "Mehulkumar Desai Mr., Indian Institute of Technology, Indian School of Mines, Dhanbad Shanmugapriya T, Indian Institute of Technology (ISM) Dhanbad",
@@ -718,16 +728,6 @@
       "presenters": "Lyle Skains, Wonderbox Digital",
       "track": "Algorithms & Imaginaries",
       "type": "Experimental Track",
-      "start": "2026-07-17T14:30:00Z",
-      "end": "2026-07-17T15:30:00Z",
-      "featured": false
-    },
-    {
-      "title": "The Implications of Generative-AI User Prompt Engineering Shaping the Absent Presence of Latino Women Textual Rhetoric in LLMs",
-      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/23",
-      "presenters": "Angely C. Suarez DeJesus",
-      "track": "Narratives & Worlds",
-      "type": "Individual Talk",
       "start": "2026-07-17T14:30:00Z",
       "end": "2026-07-17T15:30:00Z",
       "featured": false
