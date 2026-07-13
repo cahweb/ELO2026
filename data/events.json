@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13T15:14:28Z",
+  "generated": "2026-07-13T19:52:29Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
     {
@@ -325,7 +325,7 @@
     {
       "title": "Portuguese Net Art and e-Poetics",
       "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/11",
-      "presenters": "Johanna Drucker Sofia Ponte, IADE Rui Torres, University Fernando Pessoa Diogo Marques, University of Porto Manuel Portela, University of Coimbr",
+      "presenters": "Johanna Drucker Sofia Ponte, IADE Rui Torres, University Fernando Pessoa Diogo Marques, University of Porto Manuel Portela, University of Coimbra",
       "track": "Algorithms & Imaginaries",
       "type": "Panel",
       "start": "2026-07-16T14:30:00Z",
@@ -405,7 +405,7 @@
     {
       "title": "E-Lit Periodicals in the Age of AI",
       "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/13",
-      "presenters": "Peter D. Edgar, University of Central Florida Glenn S. Ritchey III, University of Central Florida Kiera Obbard, University of Waterloo Kavi Duvvoori, University of Waterloo Margot Machado Knuth, Universitat Oberta de Catalunya",
+      "presenters": "P.D. Edgar, University of Central Florida Glenn S. Ritchey III, University of Central Florida Kiera Obbard, University of Waterloo Kavi Duvvoori, University of Waterloo",
       "track": "Algorithms & Imaginaries",
       "type": "Panel",
       "start": "2026-07-16T19:30:00Z",
@@ -1026,16 +1026,6 @@
       "title": "Unsupervised Pedagogy and Electronic Literature under Infrastructural Constraint: Experiences from Calabar",
       "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/32",
       "presenters": "Lilian Okoro",
-      "track": "Narratives & Worlds",
-      "type": "Individual Talk",
-      "start": "2026-07-18T14:30:00Z",
-      "end": "2026-07-18T15:30:00Z",
-      "featured": false
-    },
-    {
-      "title": "Unsupervised: Shedding Light on South African Digital Poetry",
-      "url": "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/33",
-      "presenters": "Jasmine Mattey, University of Bergen",
       "track": "Narratives & Worlds",
       "type": "Individual Talk",
       "start": "2026-07-18T14:30:00Z",
