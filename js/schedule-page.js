@@ -2,6 +2,8 @@ import {
   detectTimeZone,
   formatTimeRange,
   groupEventsByDay,
+  groupEventsIntoSessions,
+  sessionHeading,
   zoneLabel,
 } from "./schedule-core.js";
 
@@ -30,6 +32,37 @@ const esc = (s) =>
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
   })[c]);
 
+function renderSession(session, sessionId, timeZone) {
+  const { heading, description } = sessionHeading(session.type);
+  return `
+        <section class="session" aria-labelledby="${sessionId}">
+          <h3 class="session-heading" id="${sessionId}">
+            ${esc(heading)}
+            ${description ? `<span class="session-desc">${esc(description)}</span>` : ""}
+          </h3>
+          <p class="session-meta">
+            ${esc(formatTimeRange(session.start, session.end, timeZone))}
+            ${session.track ? ` &middot; ${esc(session.track)} track` : ""}
+          </p>
+          <ul class="event-list">
+            ${session.events
+              .map(
+                (ev) => `
+              <li class="event-item${ev.featured ? " featured" : ""}">
+                <h4 class="event-title">
+                  <a href="${esc(ev.url)}" target="_blank" rel="noopener">
+                    ${esc(ev.title)}<span class="visually-hidden"> (opens in new window on the STARS repository)</span>
+                  </a>
+                  ${ev.featured ? `<span class="badge featured-badge">Featured</span>` : ""}
+                </h4>
+                ${ev.presenters ? `<p class="event-meta">${esc(ev.presenters)}</p>` : ""}
+              </li>`
+              )
+              .join("")}
+          </ul>
+        </section>`;
+}
+
 function renderSchedule(events, timeZone) {
   const container = document.getElementById("schedule");
   const groups = groupEventsByDay(events, timeZone);
@@ -38,25 +71,11 @@ function renderSchedule(events, timeZone) {
       (group) => `
       <section aria-labelledby="day-${esc(group.key)}">
         <h2 class="day-heading" id="day-${esc(group.key)}">${esc(group.label)}</h2>
-        <ul class="event-list">
-          ${group.events
-            .map(
-              (ev) => `
-            <li class="event-item${ev.featured ? " featured" : ""}">
-              <p class="event-time">${esc(formatTimeRange(ev.start, ev.end, timeZone))}</p>
-              <h3 class="event-title">
-                <a href="${esc(ev.url)}" target="_blank" rel="noopener">
-                  ${esc(ev.title)}<span class="visually-hidden"> (opens in new window on the STARS repository)</span>
-                </a>
-                ${ev.type ? `<span class="badge">${esc(ev.type)}</span>` : ""}
-                ${ev.featured ? `<span class="badge featured-badge">Featured</span>` : ""}
-              </h3>
-              ${ev.presenters ? `<p class="event-meta">${esc(ev.presenters)}</p>` : ""}
-              ${ev.track ? `<p class="event-meta">Track: ${esc(ev.track)}</p>` : ""}
-            </li>`
-            )
-            .join("")}
-        </ul>
+        ${groupEventsIntoSessions(group.events)
+          .map((session, i) =>
+            renderSession(session, `session-${esc(group.key)}-${i}`, timeZone)
+          )
+          .join("")}
       </section>`
     )
     .join("");

@@ -58,3 +58,56 @@ export function groupEventsByDay(events, timeZone) {
 export function zoneLabel(timeZone) {
   return timeZone.replaceAll("/", " / ").replaceAll("_", " ");
 }
+
+// Display headings for the session types used in STARS. "Individual Talk"
+// entries are individual papers that STARS schedules together into one
+// shared time slot, so the heading describes the whole session.
+const SESSION_TYPE_HEADINGS = {
+  Plenary: { heading: "Plenary" },
+  Keynote: { heading: "Keynote" },
+  Panel: { heading: "Panel" },
+  Workshop: { heading: "Workshop" },
+  "Individual Talk": {
+    heading: "Individual Paper Session",
+    description: "3–4 papers, 10–12 minutes each",
+  },
+  Performance: {
+    heading: "Performance Session",
+    description: "Performances of 10–15 minutes each",
+  },
+  "Experimental Track": { heading: "Experimental Track" },
+};
+
+export function sessionHeading(type) {
+  return SESSION_TYPE_HEADINGS[type] || { heading: type || "Session" };
+}
+
+// Events sharing a time slot, track, and type form one session (e.g. the
+// 3–4 papers of an individual paper session). Sessions are ordered by
+// start time, then track, so parallel sessions sit next to each other.
+export function groupEventsIntoSessions(events) {
+  const map = new Map();
+  for (const ev of events) {
+    const key = [ev.start, ev.end, ev.track || "", ev.type || ""].join("|");
+    if (!map.has(key)) {
+      map.set(key, {
+        start: ev.start,
+        end: ev.end,
+        track: ev.track || "",
+        type: ev.type || "",
+        events: [],
+      });
+    }
+    map.get(key).events.push(ev);
+  }
+  const sessions = [...map.values()];
+  for (const session of sessions) {
+    session.events.sort((a, b) => a.title.localeCompare(b.title));
+  }
+  return sessions.sort(
+    (a, b) =>
+      a.start.localeCompare(b.start) ||
+      a.track.localeCompare(b.track) ||
+      a.type.localeCompare(b.type)
+  );
+}

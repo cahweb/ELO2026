@@ -180,7 +180,39 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   margin: 2.5rem 0 1rem;
 }
 
-.event-list { list-style: none; margin: 0; padding: 0; }
+.session { margin: 1.75rem 0 2rem; }
+.session-heading {
+  margin: 0 0 0.2rem;
+  font-size: 1.25rem;
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 12px rgba(77, 213, 232, 0.6);
+}
+.session-desc {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  text-shadow: none;
+  color: #d0d0d0;
+}
+.session-meta {
+  color: var(--cyan);
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  margin: 0 0 0.75rem;
+}
+
+.event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1rem;
+  border-left: 2px solid rgba(77, 213, 232, 0.35);
+}
 .event-item {
   background: var(--card-bg);
   border: 2px solid rgba(255, 105, 180, 0.55);
@@ -189,8 +221,7 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   margin-bottom: 0.9rem;
 }
 .event-item.featured { border-color: var(--cyan); box-shadow: 0 0 18px rgba(77, 213, 232, 0.5); }
-.event-time { color: var(--cyan); font-size: 1.05rem; letter-spacing: 1px; }
-.event-title { margin: 0.35rem 0; font-size: 1.15rem; line-height: 1.35; }
+.event-title { margin: 0; font-size: 1.15rem; line-height: 1.35; }
 .event-title a { color: #fff; }
 .event-title a:hover, .event-title a:focus { color: var(--pink); }
 .event-meta { color: #d0d0d0; font-family: Arial, Helvetica, sans-serif; font-size: 0.95rem; margin: 0.25rem 0 0; }
