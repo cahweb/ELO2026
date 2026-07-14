@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14T14:16:17Z",
+  "generated": "2026-07-14T19:45:53Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
     {
@@ -171,16 +171,6 @@
       "start": "2026-07-15T23:00:00Z",
       "end": "2026-07-16T00:30:00Z",
       "featured": true
-    },
-    {
-      "title": "A Human Was Here: Occult Poetics, Hypertext Ritual, and the (Un)Supervised Web",
-      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/5",
-      "presenters": "Emily Carr, Nectar, Inc.",
-      "track": "Hypertexts & Fictions",
-      "type": "Individual Talk",
-      "start": "2026-07-16T13:15:00Z",
-      "end": "2026-07-16T14:15:00Z",
-      "featured": false
     },
     {
       "title": "Coercing Contribution: Navigating Involuntary Authors through a Mountain of Sleep",
@@ -373,19 +363,9 @@
       "featured": false
     },
     {
-      "title": "Techno-Human Desire or Techno, Human Desire? Sensuality and Machine Texts.",
-      "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/12",
-      "presenters": "Chloe M. A. Mauvais, University of California - Berkeley Paz Regueiro, University of California - Berkeley Joseph Rager, University of California - Berkeley",
-      "track": "Algorithms & Imaginaries",
-      "type": "Panel",
-      "start": "2026-07-16T18:15:00Z",
-      "end": "2026-07-16T19:15:00Z",
-      "featured": false
-    },
-    {
       "title": "CELL Project Roundtable 2026",
       "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/12",
-      "presenters": "Davin Heckman",
+      "presenters": "Davin Heckman Hannah Ackermans, University of Bergen Joseph P. Tabbi, University of Bergen Rui Torres, University Fernando Pessoa, Portugal & NOVA Institute of Communication (ICNOVA) Dani Spinosa Colin Robinson",
       "track": "Hypertexts & Fictions",
       "type": "Panel",
       "start": "2026-07-16T19:30:00Z",
@@ -753,6 +733,16 @@
       "featured": true
     },
     {
+      "title": "A Human Was Here: Occult Poetics, Hypertext Ritual, and the (Un)Supervised Web",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/5",
+      "presenters": "Emily Carr, Nectar, Inc.",
+      "track": "Hypertexts & Fictions",
+      "type": "Individual Talk",
+      "start": "2026-07-17T18:15:00Z",
+      "end": "2026-07-17T19:15:00Z",
+      "featured": false
+    },
+    {
       "title": "An/archivism, Chronopoetics, and Experimentation: Transformations of Literary and Artistic Creation in the Era of Generative AI",
       "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/27",
       "presenters": "Claudia Kozak, UBA/CONICET Carolina Gainza, Universidad Diego Portales Jhoerson Yagmour Figuera, Universidad Católica de Chile Milton Läufer Verónica Paula Gómez, Freie Universität Berlin Wolfgang Bongers, Universidad Católica de Chile",
@@ -860,6 +850,16 @@
       "type": "Performance",
       "start": "2026-07-17T23:00:00Z",
       "end": "2026-07-18T00:30:00Z",
+      "featured": false
+    },
+    {
+      "title": "\"The First Web Novel at 30: The Collection and the Creative Process\"",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/31",
+      "presenters": "Robert Arellano Scott Rettberg, University of Bergen",
+      "track": "Hypertexts & Fictions",
+      "type": "Panel",
+      "start": "2026-07-18T04:00:00Z",
+      "end": "2026-07-18T04:00:00Z",
       "featured": false
     },
     {
@@ -1041,16 +1041,6 @@
       "start": "2026-07-18T17:00:00Z",
       "end": "2026-07-18T18:00:00Z",
       "featured": true
-    },
-    {
-      "title": "\"The First Web Novel at 30: The Collection and the Creative Process\"",
-      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/31",
-      "presenters": "Robert Arellano Scott Rettberg, University of Bergen",
-      "track": "Hypertexts & Fictions",
-      "type": "Panel",
-      "start": "2026-07-18T18:15:00Z",
-      "end": "2026-07-18T19:15:00Z",
-      "featured": false
     },
     {
       "title": "Algorithmic Narrators: Linguistic Boundaries and Institutionalized Cultural Storytelling Across Generative AI Systems",
