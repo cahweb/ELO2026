@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T21:59:10Z",
+  "generated": "2026-07-15T23:46:36Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
     {
@@ -51,7 +51,8 @@
       "type": "Workshop",
       "start": "2026-07-15T18:15:00Z",
       "end": "2026-07-15T19:15:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/cb/46/a6/cb46a663d72afdb40c26ae47cf3dff886024420f98bb9f850a8d3ab7850991aa.m3u8"
     },
     {
       "title": "Name that face—Wikimedia images",
