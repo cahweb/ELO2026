@@ -7,6 +7,7 @@ import {
   dayKey,
   groupEventsByDay,
   groupEventsIntoSessions,
+  partitionEvents,
   sessionHeading,
   zoneLabel,
 } from "../js/schedule-core.js";
@@ -67,6 +68,35 @@ test("events sharing a slot, track, and type merge into one session", () => {
   );
   // papers within a session are alphabetized
   assert.deepEqual(sessions[0].events.map((e) => e.title), ["Alpha paper", "Zeta paper"]);
+});
+
+test("partitionEvents splits on end time relative to now", () => {
+  // Mid-conference: welcome (ends Jul 15 16:45Z) is past, keynote (Jul 18) upcoming
+  const mid = new Date("2026-07-16T12:00:00Z");
+  const { upcoming, past } = partitionEvents([KEYNOTE, WELCOME], mid);
+  assert.deepEqual(past.map((e) => e.title), ["Welcome"]);
+  assert.deepEqual(upcoming.map((e) => e.title), ["Keynote"]);
+});
+
+test("partitionEvents treats an in-progress event as upcoming", () => {
+  const during = new Date("2026-07-18T17:30:00Z"); // keynote is underway
+  const { upcoming, past } = partitionEvents([KEYNOTE], during);
+  assert.equal(upcoming.length, 1);
+  assert.equal(past.length, 0);
+});
+
+test("partitionEvents moves an event to past exactly at its end", () => {
+  const atEnd = new Date("2026-07-18T18:00:00Z");
+  const { upcoming, past } = partitionEvents([KEYNOTE], atEnd);
+  assert.equal(past.length, 1);
+  assert.equal(upcoming.length, 0);
+});
+
+test("partitionEvents accepts ISO strings and handles everything past", () => {
+  const after = "2026-07-19T00:00:00Z";
+  const { upcoming, past } = partitionEvents([KEYNOTE, WELCOME], after);
+  assert.equal(upcoming.length, 0);
+  assert.equal(past.length, 2);
 });
 
 test("sessionHeading describes paper and performance sessions", () => {

@@ -286,3 +286,58 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   text-shadow: 0 0 20px rgba(255, 105, 180, 0.9), 0 0 40px rgba(255, 105, 180, 0.5);
   margin: 1rem 0 0;
 }
+
+/* Live-conference schedule: upcoming vs. past-recording sections */
+.schedule-part { margin-top: 2.5rem; }
+.part-heading {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(255, 105, 180, 0.4);
+  padding-bottom: 0.5rem;
+}
+.section-note {
+  color: #bdbdbd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 0.5rem 0 1.5rem;
+}
+.section-note a { color: var(--cyan); }
+
+.recording { margin-top: 0.75rem; }
+.watch-button {
+  font-family: "Righteous", "Arial Black", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #000;
+  background: var(--cyan);
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(77, 213, 232, 0.6);
+}
+.watch-button:hover, .watch-button:focus {
+  background: var(--pink);
+  box-shadow: 0 0 16px rgba(255, 105, 180, 0.7);
+}
+.watch-button:disabled { opacity: 0.7; cursor: wait; }
+
+.recording-player {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid rgba(77, 213, 232, 0.5);
+  border-radius: 8px;
+}
+
+.recording-soon {
+  color: #bdbdbd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0.5rem 0 0;
+}
+.recording-soon a { color: var(--cyan); }

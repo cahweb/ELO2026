@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T19:38:24Z",
+  "generated": "2026-07-15T21:59:10Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
     {
@@ -20,7 +20,8 @@
       "type": "Keynote",
       "start": "2026-07-15T17:00:00Z",
       "end": "2026-07-15T18:00:00Z",
-      "featured": true
+      "featured": true,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/8e/63/31/8e63310c1b41f0ac10be5a8c0f99bfbb4f1cd49893d27f79d160eefefbfb97a6.m3u8"
     },
     {
       "title": "AI-Generated Code + E-Poetry: Exploring the possibilities of digital poetry with AI generated code in TouchDesigner",

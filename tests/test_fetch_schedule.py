@@ -1,8 +1,19 @@
 import json
+import tempfile
 import unittest
+import urllib.error
 from pathlib import Path
 
-from scripts.fetch_schedule import parse_schedule, _to_utc_iso, parse_rss_links, build_payload, validate
+from scripts.fetch_schedule import (
+    STREAMING_API,
+    _to_utc_iso,
+    build_payload,
+    check_videos,
+    load_previous_videos,
+    parse_rss_links,
+    parse_schedule,
+    validate,
+)
 
 FIXTURE = Path(__file__).parent / "fixtures" / "combined_schedule.html"
 RSS_FIXTURE = Path(__file__).parent / "fixtures" / "recent-events.rss"
@@ -93,6 +104,94 @@ class PayloadTests(unittest.TestCase):
         bad = build_payload(self.events, self.links, "2026-07-03T12:00:00Z")
         bad["events"][5]["end"] = "2026-07-15T99:99"
         self.assertNotEqual(validate(bad), [])
+
+    def test_videos_attached_to_matching_events(self):
+        url = self.events[0]["url"]
+        videos = {url: "https://s3.amazonaws.com/example/recording.m3u8"}
+        payload = build_payload(self.events, self.links, "2026-07-15T12:00:00Z", videos)
+        by_url = {e["url"]: e for e in payload["events"]}
+        self.assertEqual(by_url[url]["video"], videos[url])
+        others = [e for e in payload["events"] if e["url"] != url]
+        self.assertTrue(all("video" not in e for e in others))
+        self.assertEqual(validate(payload), [])
+
+    def test_bad_video_url_fails_validation(self):
+        videos = {self.events[0]["url"]: "not-a-url"}
+        payload = build_payload(self.events, self.links, "2026-07-15T12:00:00Z", videos)
+        self.assertTrue(any("video" in e for e in validate(payload)))
+
+
+def _http_error(url, code):
+    return urllib.error.HTTPError(url, code, "err", hdrs=None, fp=None)
+
+
+class CheckVideosTests(unittest.TestCase):
+    EVENTS = [
+        {"url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/1"},
+        {"url": "https://stars.library.ucf.edu/elo2026/combined_schedule/all/3"},
+    ]
+    M3U8 = "https://s3.amazonaws.com/example/keynote.m3u8"
+
+    def test_published_recording_found(self):
+        def fetcher(url):
+            if "all%2F3" in url:
+                return json.dumps([self.M3U8])
+            raise _http_error(url, 404)
+
+        videos = check_videos(self.EVENTS, {}, fetcher)
+        self.assertEqual(videos, {self.EVENTS[1]["url"]: self.M3U8})
+
+    def test_queries_streaming_api_with_encoded_event_url(self):
+        seen = []
+
+        def fetcher(url):
+            seen.append(url)
+            raise _http_error(url, 404)
+
+        check_videos(self.EVENTS[:1], {}, fetcher)
+        self.assertEqual(
+            seen,
+            [STREAMING_API + "https%3A%2F%2Fstars.library.ucf.edu%2Felo2026%2Fcombined_schedule%2Fall%2F1"],
+        )
+
+    def test_transient_error_keeps_previous_video(self):
+        def fetcher(url):
+            raise _http_error(url, 500)
+
+        previous = {self.EVENTS[1]["url"]: self.M3U8}
+        videos = check_videos(self.EVENTS, previous, fetcher)
+        self.assertEqual(videos, previous)
+
+    def test_404_means_no_recording_even_if_previously_seen(self):
+        def fetcher(url):
+            raise _http_error(url, 404)
+
+        previous = {self.EVENTS[1]["url"]: self.M3U8}
+        self.assertEqual(check_videos(self.EVENTS, previous, fetcher), {})
+
+    def test_garbage_response_ignored(self):
+        videos = check_videos(self.EVENTS[:1], {}, lambda url: "not json")
+        self.assertEqual(videos, {})
+
+
+class LoadPreviousVideosTests(unittest.TestCase):
+    def test_reads_videos_from_payload(self):
+        payload = {
+            "events": [
+                {"url": "https://example.com/a", "video": "https://example.com/a.m3u8"},
+                {"url": "https://example.com/b"},
+            ]
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "events.json"
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            self.assertEqual(
+                load_previous_videos(path),
+                {"https://example.com/a": "https://example.com/a.m3u8"},
+            )
+
+    def test_missing_file_returns_empty(self):
+        self.assertEqual(load_previous_videos(Path("does-not-exist.json")), {})
 
 
 if __name__ == "__main__":

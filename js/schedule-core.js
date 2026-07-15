@@ -55,6 +55,19 @@ export function groupEventsByDay(events, timeZone) {
   return [...groups.values()].sort((a, b) => a.key.localeCompare(b.key));
 }
 
+// Once the conference is live the schedule splits in two: sessions still to
+// come, and concluded sessions whose recordings are (or will be) on STARS.
+// An event counts as past once its end time has been reached.
+export function partitionEvents(events, now) {
+  const cutoff = (now instanceof Date ? now : new Date(now)).getTime();
+  const upcoming = [];
+  const past = [];
+  for (const ev of events) {
+    (new Date(ev.end).getTime() <= cutoff ? past : upcoming).push(ev);
+  }
+  return { upcoming, past };
+}
+
 export function zoneLabel(timeZone) {
   return timeZone.replaceAll("/", " / ").replaceAll("_", " ");
 }
