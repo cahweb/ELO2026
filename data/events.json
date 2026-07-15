@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T08:37:39Z",
+  "generated": "2026-07-15T14:13:46Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
     {
@@ -853,16 +853,6 @@
       "featured": false
     },
     {
-      "title": "\"The First Web Novel at 30: The Collection and the Creative Process\"",
-      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/31",
-      "presenters": "Robert Arellano Scott Rettberg, University of Bergen",
-      "track": "Hypertexts & Fictions",
-      "type": "Panel",
-      "start": "2026-07-18T04:00:00Z",
-      "end": "2026-07-18T04:00:00Z",
-      "featured": false
-    },
-    {
       "title": "Coding a Poetics of Love and Politics: On the Remixing Potentials of Christopher Strachey and Lillian-Yvonne Bertram’s Poem Generators",
       "url": "https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/37",
       "presenters": "Tiffany Fung, The Chinese University of Hong Kong",
@@ -1041,6 +1031,16 @@
       "start": "2026-07-18T17:00:00Z",
       "end": "2026-07-18T18:00:00Z",
       "featured": true
+    },
+    {
+      "title": "\"The First Web Novel at 30: The Collection and the Creative Process\"",
+      "url": "https://stars.library.ucf.edu/elo2026/hypertextsandfictions/schedule/31",
+      "presenters": "Robert Arellano Scott Rettberg, University of Bergen",
+      "track": "Hypertexts & Fictions",
+      "type": "Panel",
+      "start": "2026-07-18T18:15:00Z",
+      "end": "2026-07-18T19:15:00Z",
+      "featured": false
     },
     {
       "title": "Algorithmic Narrators: Linguistic Boundaries and Institutionalized Cultural Storytelling Across Generative AI Systems",
