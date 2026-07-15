@@ -341,3 +341,10 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   margin: 0.5rem 0 0;
 }
 .recording-soon a { color: var(--cyan); }
+
+/* Header menu on the schedule page */
+.header-nav { margin: 1rem 0; }
+.header-nav .cta-button { font-size: 0.95rem; padding: 0.5rem 1.25rem; }
+
+/* Land anchor jumps with breathing room above the section heading */
+.part-heading { scroll-margin-top: 1.5rem; }

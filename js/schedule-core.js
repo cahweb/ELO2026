@@ -68,6 +68,22 @@ export function partitionEvents(events, now) {
   return { upcoming, past };
 }
 
+// Sessions that will not have a recording posted to STARS, keyed by the
+// event's STARS url, so the past-recordings view doesn't promise one.
+export const NO_RECORDING_URLS = new Set([
+  // Opening welcome remarks — not being recorded
+  "https://stars.library.ucf.edu/elo2026/combined_schedule/all/1",
+]);
+
+// A concluded session is "awaiting" its recording when none of its events
+// has a video yet, unless every event is one we know won't be recorded.
+export function awaitingRecording(session) {
+  return (
+    !session.events.some((ev) => ev.video) &&
+    session.events.some((ev) => !NO_RECORDING_URLS.has(ev.url))
+  );
+}
+
 export function zoneLabel(timeZone) {
   return timeZone.replaceAll("/", " / ").replaceAll("_", " ");
 }

@@ -1,4 +1,5 @@
 import {
+  awaitingRecording,
   detectTimeZone,
   formatTimeRange,
   groupEventsByDay,
@@ -59,9 +60,8 @@ function renderEvent(ev, isPast) {
 
 function renderSession(session, sessionId, timeZone, isPast) {
   const { heading, description } = sessionHeading(session.type);
-  const hasRecording = session.events.some((ev) => ev.video);
   const recordingNote =
-    isPast && !hasRecording
+    isPast && awaitingRecording(session)
       ? `<p class="recording-soon">Recording will be available soon.</p>`
       : "";
   return `

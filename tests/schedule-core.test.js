@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  awaitingRecording,
   detectTimeZone,
   formatTimeRange,
   formatDayLabel,
@@ -97,6 +98,26 @@ test("partitionEvents accepts ISO strings and handles everything past", () => {
   const { upcoming, past } = partitionEvents([KEYNOTE, WELCOME], after);
   assert.equal(upcoming.length, 0);
   assert.equal(past.length, 2);
+});
+
+test("awaitingRecording is true for a concluded session with no video", () => {
+  const session = { events: [{ url: "https://stars.library.ucf.edu/elo2026/combined_schedule/all/3" }] };
+  assert.equal(awaitingRecording(session), true);
+});
+
+test("awaitingRecording is false once any event has a video", () => {
+  const session = {
+    events: [
+      { url: "https://stars.library.ucf.edu/elo2026/combined_schedule/all/3", video: "https://example.com/v.m3u8" },
+    ],
+  };
+  assert.equal(awaitingRecording(session), false);
+});
+
+test("awaitingRecording is false for sessions that won't be recorded", () => {
+  // The opening welcome remarks are not being recorded
+  const session = { events: [{ url: "https://stars.library.ucf.edu/elo2026/combined_schedule/all/1" }] };
+  assert.equal(awaitingRecording(session), false);
 });
 
 test("sessionHeading describes paper and performance sessions", () => {
