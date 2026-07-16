@@ -1,11 +1,15 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  awaitingRecording,
   detectTimeZone,
   formatTimeRange,
   formatDayLabel,
   dayKey,
   groupEventsByDay,
+  groupEventsIntoSessions,
+  partitionEvents,
+  sessionHeading,
   zoneLabel,
 } from "../js/schedule-core.js";
 
@@ -46,4 +50,86 @@ test("detectTimeZone returns a non-empty IANA-looking string", () => {
 
 test("zoneLabel humanizes underscores", () => {
   assert.equal(zoneLabel("America/New_York"), "America / New York");
+});
+
+const SLOT = { start: "2026-07-15T18:15:00Z", end: "2026-07-15T19:15:00Z" };
+const PAPER_A = { ...SLOT, title: "Zeta paper", track: "Algorithms & Imaginaries", type: "Individual Talk" };
+const PAPER_B = { ...SLOT, title: "Alpha paper", track: "Algorithms & Imaginaries", type: "Individual Talk" };
+const PARALLEL_WORKSHOP = { ...SLOT, title: "Workshop", track: "Hypertexts & Fictions", type: "Workshop" };
+const LATER_PANEL = {
+  title: "Panel", track: "Algorithms & Imaginaries", type: "Panel",
+  start: "2026-07-15T19:30:00Z", end: "2026-07-15T20:30:00Z",
+};
+
+test("events sharing a slot, track, and type merge into one session", () => {
+  const sessions = groupEventsIntoSessions([LATER_PANEL, PAPER_A, PARALLEL_WORKSHOP, PAPER_B]);
+  assert.deepEqual(
+    sessions.map((s) => [s.type, s.events.length]),
+    [["Individual Talk", 2], ["Workshop", 1], ["Panel", 1]]
+  );
+  // papers within a session are alphabetized
+  assert.deepEqual(sessions[0].events.map((e) => e.title), ["Alpha paper", "Zeta paper"]);
+});
+
+test("partitionEvents splits on end time relative to now", () => {
+  // Mid-conference: welcome (ends Jul 15 16:45Z) is past, keynote (Jul 18) upcoming
+  const mid = new Date("2026-07-16T12:00:00Z");
+  const { upcoming, past } = partitionEvents([KEYNOTE, WELCOME], mid);
+  assert.deepEqual(past.map((e) => e.title), ["Welcome"]);
+  assert.deepEqual(upcoming.map((e) => e.title), ["Keynote"]);
+});
+
+test("partitionEvents treats an in-progress event as upcoming", () => {
+  const during = new Date("2026-07-18T17:30:00Z"); // keynote is underway
+  const { upcoming, past } = partitionEvents([KEYNOTE], during);
+  assert.equal(upcoming.length, 1);
+  assert.equal(past.length, 0);
+});
+
+test("partitionEvents moves an event to past exactly at its end", () => {
+  const atEnd = new Date("2026-07-18T18:00:00Z");
+  const { upcoming, past } = partitionEvents([KEYNOTE], atEnd);
+  assert.equal(past.length, 1);
+  assert.equal(upcoming.length, 0);
+});
+
+test("partitionEvents accepts ISO strings and handles everything past", () => {
+  const after = "2026-07-19T00:00:00Z";
+  const { upcoming, past } = partitionEvents([KEYNOTE, WELCOME], after);
+  assert.equal(upcoming.length, 0);
+  assert.equal(past.length, 2);
+});
+
+test("awaitingRecording is true for a concluded session with no video", () => {
+  const session = { events: [{ url: "https://stars.library.ucf.edu/elo2026/combined_schedule/all/3" }] };
+  assert.equal(awaitingRecording(session), true);
+});
+
+test("awaitingRecording is false once any event has a video", () => {
+  const session = {
+    events: [
+      { url: "https://stars.library.ucf.edu/elo2026/combined_schedule/all/3", video: "https://example.com/v.m3u8" },
+    ],
+  };
+  assert.equal(awaitingRecording(session), false);
+});
+
+test("awaitingRecording is false for sessions that won't be recorded", () => {
+  // The opening welcome remarks are not being recorded
+  const session = { events: [{ url: "https://stars.library.ucf.edu/elo2026/combined_schedule/all/1" }] };
+  assert.equal(awaitingRecording(session), false);
+});
+
+test("sessionHeading describes paper and performance sessions", () => {
+  assert.deepEqual(sessionHeading("Individual Talk"), {
+    heading: "Individual Paper Session",
+    description: "3–4 papers, 10–12 minutes each",
+  });
+  assert.deepEqual(sessionHeading("Performance"), {
+    heading: "Performance Session",
+    description: "Performances of 10–15 minutes each",
+  });
+  assert.equal(sessionHeading("Plenary").heading, "Plenary");
+  assert.equal(sessionHeading("").heading, "Session");
+  assert.equal(sessionHeading("Birds of a Feather").heading, "Birds of a Feather");
 });

@@ -8,6 +8,8 @@ microformat rows on the combined-schedule page and store UTC instants.
 import json
 import re
 import sys
+import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from html import unescape
@@ -16,8 +18,20 @@ from zoneinfo import ZoneInfo
 
 SCHEDULE_URL = "https://stars.library.ucf.edu/elo2026/combined_schedule/"
 RSS_URL = "https://stars.library.ucf.edu/elo2026/combined_schedule/all/recent-events.rss"
+# STARS (bepress) streaming lookup: 200 + JSON [m3u8 url] once a session
+# recording has finished transcoding, 404 otherwise.
+STREAMING_API = "https://stars.library.ucf.edu/do/api/streaming/path?article_uri="
 OUTPUT = Path(__file__).resolve().parent.parent / "data" / "events.json"
 EASTERN = ZoneInfo("America/New_York")
+# Day-of program changes not reflected in STARS, applied on top of every
+# sync: event url -> replacement fields.
+OVERRIDES = {
+    # 2026-07-16: Saum-Pascual & Ortega-Guzman moved into the concurrent
+    # two-paper Hypertexts & Fictions session to balance the panels.
+    "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/7": {
+        "track": "Hypertexts & Fictions",
+    },
+}
 USER_AGENT = "ELO2026-schedule-sync (github.com/AMSUCF/ELO2026)"
 MIN_EVENTS = 50
 
@@ -79,10 +93,50 @@ def parse_rss_links(xml):
     return set(re.findall(r"<item>.*?<link>\s*(\S+?)\s*</link>", xml, re.S))
 
 
-def build_payload(events, rss_links, generated):
+def load_previous_videos(path):
+    """Map event url -> video url from the last sync, so a transient API
+    failure never drops a recording that was already published."""
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return {
+        ev["url"]: ev["video"]
+        for ev in payload.get("events", [])
+        if ev.get("url") and ev.get("video")
+    }
+
+
+def check_videos(events, previous, fetcher):
+    """Return url -> m3u8 video url for every event whose recording is live
+    on STARS. `fetcher` gets the streaming-API url and returns the response
+    body, raising urllib.error.HTTPError (404 = no recording yet) on failure."""
+    videos = {}
+    for ev in events:
+        url = ev["url"]
+        try:
+            body = fetcher(STREAMING_API + urllib.parse.quote(url, safe=""))
+            playlist = json.loads(body)
+            if playlist and isinstance(playlist, list) and playlist[0].startswith("https://"):
+                videos[url] = playlist[0]
+        except urllib.error.HTTPError as err:
+            if err.code != 404 and url in previous:
+                videos[url] = previous[url]
+        except (OSError, ValueError):
+            if url in previous:
+                videos[url] = previous[url]
+    return videos
+
+
+def build_payload(events, rss_links, generated, videos=None):
+    videos = videos or {}
+    events = [{**ev, **OVERRIDES.get(ev["url"], {})} for ev in events]
     out = []
     for ev in sorted(events, key=lambda e: (e["start"], e["title"])):
-        out.append({**ev, "featured": ev["url"] in rss_links})
+        entry = {**ev, "featured": ev["url"] in rss_links}
+        if ev["url"] in videos:
+            entry["video"] = videos[ev["url"]]
+        out.append(entry)
     return {"generated": generated, "source": SCHEDULE_URL, "events": out}
 
 
@@ -100,6 +154,8 @@ def validate(payload):
             errors.append(f"bad end time: {ev.get('title')}")
         if ev.get("start", "") > ev.get("end", ""):
             errors.append(f"start after end: {ev.get('title')}")
+        if "video" in ev and not str(ev["video"]).startswith("https://"):
+            errors.append(f"bad video url: {ev.get('title')}")
     if not any(ev.get("featured") for ev in events):
         errors.append("no featured events matched the RSS feed")
     return errors
@@ -114,8 +170,9 @@ def _fetch(url):
 def main():
     events = parse_schedule(_fetch(SCHEDULE_URL))
     rss_links = parse_rss_links(_fetch(RSS_URL))
+    videos = check_videos(events, load_previous_videos(OUTPUT), _fetch)
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    payload = build_payload(events, rss_links, generated)
+    payload = build_payload(events, rss_links, generated, videos)
     errors = validate(payload)
     if errors:
         for err in errors:
@@ -126,7 +183,7 @@ def main():
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(f"Wrote {len(payload['events'])} events to {OUTPUT}")
+    print(f"Wrote {len(payload['events'])} events ({len(videos)} with recordings) to {OUTPUT}")
     return 0
 
 
