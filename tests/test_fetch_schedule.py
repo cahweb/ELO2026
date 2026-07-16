@@ -115,6 +115,11 @@ class PayloadTests(unittest.TestCase):
         self.assertTrue(all("video" not in e for e in others))
         self.assertEqual(validate(payload), [])
 
+    def test_overrides_applied_to_scraped_events(self):
+        url = "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/7"
+        by_url = {e["url"]: e for e in self.payload["events"]}
+        self.assertEqual(by_url[url]["track"], "Hypertexts & Fictions")
+
     def test_bad_video_url_fails_validation(self):
         videos = {self.events[0]["url"]: "not-a-url"}
         payload = build_payload(self.events, self.links, "2026-07-15T12:00:00Z", videos)

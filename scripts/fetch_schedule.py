@@ -23,6 +23,15 @@ RSS_URL = "https://stars.library.ucf.edu/elo2026/combined_schedule/all/recent-ev
 STREAMING_API = "https://stars.library.ucf.edu/do/api/streaming/path?article_uri="
 OUTPUT = Path(__file__).resolve().parent.parent / "data" / "events.json"
 EASTERN = ZoneInfo("America/New_York")
+# Day-of program changes not reflected in STARS, applied on top of every
+# sync: event url -> replacement fields.
+OVERRIDES = {
+    # 2026-07-16: Saum-Pascual & Ortega-Guzman moved into the concurrent
+    # two-paper Hypertexts & Fictions session to balance the panels.
+    "https://stars.library.ucf.edu/elo2026/narrativesandworlds/schedule/7": {
+        "track": "Hypertexts & Fictions",
+    },
+}
 USER_AGENT = "ELO2026-schedule-sync (github.com/AMSUCF/ELO2026)"
 MIN_EVENTS = 50
 
@@ -121,6 +130,7 @@ def check_videos(events, previous, fetcher):
 
 def build_payload(events, rss_links, generated, videos=None):
     videos = videos or {}
+    events = [{**ev, **OVERRIDES.get(ev["url"], {})} for ev in events]
     out = []
     for ev in sorted(events, key=lambda e: (e["start"], e["title"])):
         entry = {**ev, "featured": ev["url"] in rss_links}
