@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T14:26:15Z",
+  "generated": "2026-07-16T19:36:12Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
     {
@@ -239,7 +239,8 @@
       "type": "Individual Talk",
       "start": "2026-07-16T13:15:00Z",
       "end": "2026-07-16T14:15:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/ff/25/f1/ff25f1d5e4bbd92038f5f9517290838af7bf9897122acf73a6ef8c941b695300.m3u8"
     },
     {
       "title": "Start typing… Digital Poetry in Latin America",
