@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T23:46:36Z",
+  "generated": "2026-07-16T03:42:13Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
     {
@@ -31,7 +31,8 @@
       "type": "Individual Talk",
       "start": "2026-07-15T18:15:00Z",
       "end": "2026-07-15T19:15:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/64/22/c2/6422c26a3cf53dcb906ab3b52d864d0feb5369f1dbf02dfc5878f4d7cffe717e.m3u8"
     },
     {
       "title": "Connected/Disconnected",
@@ -41,7 +42,8 @@
       "type": "Individual Talk",
       "start": "2026-07-15T18:15:00Z",
       "end": "2026-07-15T19:15:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/21/67/f6/2167f670531b546b738541a7a99e08e931776eba9605daf1bb11bcb3b9e34ed1.m3u8"
     },
     {
       "title": "Intro to Scrollimation: Principles and Practices",
@@ -82,7 +84,8 @@
       "type": "Individual Talk",
       "start": "2026-07-15T18:15:00Z",
       "end": "2026-07-15T19:15:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/69/43/e2/6943e220a04a8c32b090ec8ed33e429118c23b080636b6ddf21e8f98cea1e9eb.m3u8"
     },
     {
       "title": "Edit the Peeragogy Wikibook",
@@ -112,7 +115,8 @@
       "type": "Individual Talk",
       "start": "2026-07-15T19:30:00Z",
       "end": "2026-07-15T20:30:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/7c/f1/ce/7cf1ce83baddfc7022272848c4293dbd6eaab227a7ba6dc24083672e8b5b7fa2.m3u8"
     },
     {
       "title": "Singulars: Performing the Reverse Turing Test",
@@ -122,7 +126,8 @@
       "type": "Individual Talk",
       "start": "2026-07-15T19:30:00Z",
       "end": "2026-07-15T20:30:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/21/6a/18/216a183b8346be6d5d2dfa8094a5727faa4b03dd002e80003970484101738a3b.m3u8"
     },
     {
       "title": "Solar Powered Alba Generator",
@@ -132,7 +137,8 @@
       "type": "Individual Talk",
       "start": "2026-07-15T19:30:00Z",
       "end": "2026-07-15T20:30:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/53/89/8f/53898f27ff2d0c3e68bc8c1221c2cd37e2e4b35ff9727f089fb21a6a037e15c5.m3u8"
     },
     {
       "title": "The Subcutanean Variorum",
@@ -142,7 +148,8 @@
       "type": "Individual Talk",
       "start": "2026-07-15T19:30:00Z",
       "end": "2026-07-15T20:30:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/2c/6d/45/2c6d458981eb73d79e9f64f3c29f817c036d8d4e17368dfb19112b5855e3a60b.m3u8"
     },
     {
       "title": "On the Peripheries of E-lit: Study Digital Literary Cultures (Plus)",
