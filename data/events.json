@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-22T14:27:37Z",
+  "generated": "2026-07-22T19:47:41Z",
   "source": "https://stars.library.ucf.edu/elo2026/combined_schedule/",
   "events": [
     {
@@ -663,7 +663,8 @@
       "type": "Individual Talk",
       "start": "2026-07-17T14:30:00Z",
       "end": "2026-07-17T15:30:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/d6/fb/bd/d6fbbdf61827811f1048e412721718ec95c07fb2f12bd3ba3b154b67bcba4f35.m3u8"
     },
     {
       "title": "Code poetry and labour: the game excess of work",
@@ -683,7 +684,8 @@
       "type": "Individual Talk",
       "start": "2026-07-17T14:30:00Z",
       "end": "2026-07-17T15:30:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/ae/85/f8/ae85f810f3010c05098f5320ada5ce8c9ccc60ac1e8ed8cdcda4d35718f99e95.m3u8"
     },
     {
       "title": "Electronic Literature in AI data work",
@@ -723,7 +725,8 @@
       "type": "Individual Talk",
       "start": "2026-07-17T14:30:00Z",
       "end": "2026-07-17T15:30:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/65/5d/90/655d905a8dc3c5ecd17bd816a7a881ee0fff42db84ecded970d3ab7677ad62b1.m3u8"
     },
     {
       "title": "The Headless Seven: A Live Hydraen Field Experiment",
@@ -743,7 +746,8 @@
       "type": "Individual Talk",
       "start": "2026-07-17T14:30:00Z",
       "end": "2026-07-17T15:30:00Z",
-      "featured": false
+      "featured": false,
+      "video": "https://s3.amazonaws.com/bepress-streaming-outbox-production/article_files/84/4c/6d/844c6db5b7bd3dbead49bce07af0d1c7d64979e3356b4cc63b5184c8aee0482c.m3u8"
     },
     {
       "title": "Plenary: Electronic Literature Collective 5",
